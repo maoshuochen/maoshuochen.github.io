@@ -1,7 +1,8 @@
-import { Layout, Menu, theme, Space } from "antd";
+import { Layout, Menu, theme, Space, Typography } from "antd";
 import "./App.css";
 import { articles } from "./data.tsx";
 const { Header, Content, Footer } = Layout;
+const { Title } = Typography;
 
 export default function App() {
     const {
@@ -10,15 +11,27 @@ export default function App() {
 
     const covers = articles.map((article) => (
         <div
+            className="cover"
             style={{
                 background: colorBgContainer,
-                minHeight: 280,
-                padding: 24,
+                minHeight: "30vh",
+                padding: "24px 48px",
                 borderRadius: borderRadiusLG,
+                cursor: "pointer",
                 backgroundImage: `url(${article.image_url})`,
             }}
         >
-            {article.title}
+            <Title
+                level={2}
+                className="cover-title"
+                style={{
+                    color: "#222",
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: 500,
+                }}
+            >
+                {article.title}
+            </Title>
         </div>
     ));
 
@@ -31,15 +44,24 @@ export default function App() {
                     backgroundColor: "#fff",
                 }}
             >
-                <div className="demo-logo" />
+                <p
+                    style={{
+                        marginRight: "30px",
+                        fontSize: "16px",
+                        fontWeight: 700,
+                        fontFamily: "Montserrat, sans-serif",
+                    }}
+                >
+                    Maoshuo Chen
+                </p>
                 <Menu
                     theme="light"
                     mode="horizontal"
-                    defaultSelectedKeys={["2"]}
+                    defaultSelectedKeys={["1"]}
                     items={[
                         {
                             key: "1",
-                            label: "11111",
+                            label: "Projects",
                         },
                     ]}
                     style={{ flex: 1, minWidth: 0 }}
