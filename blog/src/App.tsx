@@ -1,58 +1,33 @@
-import { Layout, Menu, theme, Space, Typography } from "antd";
+import { Layout, Menu, Space } from "antd";
 import "./App.css";
 import { articles } from "./data.tsx";
 const { Header, Content, Footer } = Layout;
-const { Title } = Typography;
 
 export default function App() {
-    const {
-        token: { colorBgContainer, borderRadiusLG },
-    } = theme.useToken();
-
     const covers = articles.map((article) => (
         <div
-            className="cover"
+            className="rounded-xl min-h-72 p-12 cursor-pointer bg-white shadow-xl shadow-gray-100 hover:shadow-gray-200 duration-200"
             style={{
-                background: colorBgContainer,
-                minHeight: "30vh",
-                padding: "24px 48px",
-                borderRadius: borderRadiusLG,
-                cursor: "pointer",
                 backgroundImage: `url(${article.image_url})`,
             }}
         >
-            <Title
-                level={2}
-                className="cover-title"
-                style={{
-                    color: "#222",
-                    fontFamily: "Montserrat, sans-serif",
-                    fontWeight: 500,
-                }}
+            <h2
+                className="text-gray-900 text-3xl"
+                style={{ fontFamily: '"Roboto", sans-serif' }}
             >
                 {article.title}
-            </Title>
+            </h2>
         </div>
     ));
 
     return (
         <Layout style={{ width: "100%", minHeight: "100vh" }}>
-            <Header
-                style={{
-                    display: "flex",
-                    alignItems: "center",
-                    backgroundColor: "#fff",
-                }}
-            >
+            <Header className="flex items-center bg-white">
                 <p
-                    style={{
-                        marginRight: "30px",
-                        fontSize: "16px",
-                        fontWeight: 700,
-                        fontFamily: "Montserrat, sans-serif",
-                    }}
+                    className="text-base mr-4 ml-1"
+                    style={{ fontFamily: '"Roboto Condensed", sans-serif' }}
                 >
-                    Maoshuo Chen
+                    MAOSHUO CHEN
                 </p>
                 <Menu
                     theme="light"
@@ -67,7 +42,7 @@ export default function App() {
                     style={{ flex: 1, minWidth: 0 }}
                 />
             </Header>
-            <Content style={{ padding: "48px" }}>
+            <Content className="p-10">
                 <Space direction="vertical" size={40} style={{ width: "100%" }}>
                     {covers}
                 </Space>
