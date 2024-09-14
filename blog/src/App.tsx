@@ -47,7 +47,6 @@ export default function App() {
                     {covers}
                 </Space>
             </Content>
-
             <Footer style={{ textAlign: "center" }}>
                 Maoshuo Chen ©{new Date().getFullYear()}
             </Footer>
