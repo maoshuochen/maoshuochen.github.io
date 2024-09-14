@@ -1,6 +1,6 @@
 # Blog
 
-URL: https://maoshuochen.github.io/blog/
+URL: https://maoshuochen.github.io
 
 React + Vite + Tailwind CSS + GitHub Pages + Ant Design
 
