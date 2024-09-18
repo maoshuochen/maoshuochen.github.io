@@ -8,4 +8,16 @@ export const articles = [
         key: "2",
         title: "Minimalism, Aircraft Seats Lightweight Design",
     },
+    {
+        key: "3",
+        title: "Minimalism, Aircraft Seats Lightweight Design",
+    },
+    {
+        key: "4",
+        title: "Minimalism, Aircraft Seats Lightweight Design",
+    },
+    {
+        key: "5",
+        title: "Minimalism, Aircraft Seats Lightweight Design",
+    },
 ];
