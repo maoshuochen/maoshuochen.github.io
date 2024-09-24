@@ -3,8 +3,15 @@ import { Outlet, Link } from "react-router-dom";
 export default function Header() {
     return (
         <>
-            <header className="sticky top-0 w-full h-16 flex items-center space-x-2 px-8 bg-white border-b border-zinc-100">
-                <Button variant="ghost">
+            <header
+                className="
+                    sticky top-0
+                    w-full h-16 px-8
+                    flex items-center space-x-2
+                    bg-white 
+                    border-b border-zinc-100"
+            >
+                <Button variant="link" className="font-serif font-medium">
                     <Link to="/">MAOSHUO CHEN</Link>
                 </Button>
                 <Button variant="link" className="font-normal">

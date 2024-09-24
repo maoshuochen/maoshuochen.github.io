@@ -1,27 +1,36 @@
 export const articles = [
     {
         id: "paperclip",
-        title: "PaperClip, Paper Knowledge Management Tool",
+        title: "PaperClip",
+        subtitle: "Paper Knowledge Management Tool for Academic Research",
         image_url: "/paperclip/paperclip-cover.webp",
-        content:
-            "PaperClip is a knowledge management tool that allows you to store and organize your knowledge in a simple and intuitive way.",
+        content_url: "/paperclip/paperclip.md",
     },
     {
         id: "minimalism",
-        title: "Minimalism, Aircraft Seats Lightweight Design",
-        content:
-            "Minimalism is a design philosophy that emphasizes simplicity and cleanliness.",
+        title: "Minimalism",
+        subtitle: "Aircraft Seats Lightweight Design",
+        image_url: "/minimalism/minimalism-cover.jpg",
+        content_url: "/minimalism/minimalism.md",
     },
     {
-        id: "3",
-        title: "Minimalism, Aircraft Seats Lightweight Design",
+        id: "digital-twin",
+        title: "Industrial 4.0+",
+        subtitle: "Human-Machine Collaboration & Digital Twin",
+        content_url: "/digital-twin/digital-twin.md",
     },
     {
         id: "4",
-        title: "Minimalism, Aircraft Seats Lightweight Design",
+        title: "Lorem",
+        subtitle: "Aircraft Seats Lightweight Design",
+        image_url: "/minimalism/minimalism-cover.jpg",
+        content_url: "/minimalism/minimalism.md",
     },
     {
         id: "5",
-        title: "Minimalism, Aircraft Seats Lightweight Design",
+        title: "Minimalism",
+        subtitle: "Aircraft Seats Lightweight Design",
+        image_url: "/minimalism/minimalism-cover.jpg",
+        content_url: "/minimalism/minimalism.md",
     },
 ];
