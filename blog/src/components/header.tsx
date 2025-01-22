@@ -11,7 +11,7 @@ export default function Header() {
                     bg-white 
                     border-b border-zinc-100"
             >
-                <Button variant="link" className="font-serif font-medium">
+                <Button variant="link" className="font-sans font-medium">
                     <Link to="/">MAOSHUO CHEN</Link>
                 </Button>
                 <Button variant="link" className="font-normal">
