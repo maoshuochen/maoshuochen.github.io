@@ -66,7 +66,7 @@ const useGenerateTOC = (markdown: string) => {
 export default function Post() {
     const { articleId } = useParams();
     const article = articles.find((article) => article.id === articleId);
-    const markdown = useFetchMarkdown(article?.content_url);
+    const markdown = useFetchMarkdown("/posts/" + article?.content_url);
     const toc = useGenerateTOC(markdown);
 
     if (!article) {

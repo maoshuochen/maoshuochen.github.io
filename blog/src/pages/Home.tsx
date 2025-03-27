@@ -13,7 +13,7 @@ export default function Home() {
                             border border-zinc-100  
                             hover:shadow-xl hover:shadow-zinc-200 duration-300"
                     style={{
-                        backgroundImage: `url(${article.image_url})`,
+                        backgroundImage: `url(/posts/${article.image_url})`,
                     }}
                 ></div>
                 <div className="flex flex-col w-full space-y-2 pt-4 items-start">
