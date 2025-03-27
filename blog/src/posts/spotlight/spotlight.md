@@ -8,28 +8,28 @@ Posted on [2020-05-152022-03-07](https://maoshuochen.top/spotlight-future-transi
 
 Contents
 
--   [1 🚌 BACKGROUND: Future Bus System](about:blank#BACKGROUNDFutureBusSystem)
-    -   [1.1 🏙️ Urbanization](about:blank#_Urbanization)
-    -   [1.2 🌐 Internet of Vehicles](about:blank#InternetofVehicles)
-    -   [1.3 🚌 Future Bus System](about:blank#_FutureBusSystem)
--   [2 🎯 TARGET: Identification Problem](about:blank#TARGETIdentificationProblem)
--   [3 📰 STORYBOARD: Go through the Spotlight](about:blank#STORYBOARDGothroughtheSpotlight)
-    -   [3.1 📱 Pre-order](about:blank#Pre-order)
-    -   [3.2 🔍 Find the Bus](about:blank#FindtheBus)
-    -   [3.3 ✅ Make Sure](about:blank#nbspMakenbspSure)
-    -   [3.4 👆 Get on the Bus](about:blank#_GetontheBus)
-    -   [3.5 ❗ Warn Pedestrians](about:blank#nbspWarnnbspPedestrians)
-    -   [3.6 👇 Get off the Bus](about:blank#GetofftheBus)
--   [4 💡 INTERACTION: Solutions to the Identification Problem](about:blank#INTERACTIONSolutionstotheIdentificationProblem)
-    -   [4.1 ✨ Breathing Lights](about:blank#nbspBreathingnbspLights)
-    -   [4.2 ✅ How to Make Sure](about:blank#nbspHownbsptonbspMakenbspSure)
-    -   [4.3 ❔ Why We Choose the Light](about:blank#nbspWhynbspWenbspChoosenbspthenbspLight)
-    -   [4.4 🎨 The Choice of Light Colors](about:blank#TheChoiceofLightColors)
-    -   [4.5 📱 APP Interface](about:blank#APPInterface)
--   [5 💵 BUSINESS: Reduce System Cost](about:blank#BUSINESSReduceSystemCost)
-    -   [5.1 🛠️ Modification of Existing Bus](about:blank#ModificationofExistingBus)
-    -   [5.2 📸 Identification Light System Hardware](about:blank#IdentificationLightSystemHardware)
-    -   [5.3 🚌 Multiple bus sizes](about:blank#Multiplebussizes)
+- [1 🚌 BACKGROUND: Future Bus System](about:blank#BACKGROUNDFutureBusSystem)
+  - [1.1 🏙️ Urbanization](about:blank#_Urbanization)
+  - [1.2 🌐 Internet of Vehicles](about:blank#InternetofVehicles)
+  - [1.3 🚌 Future Bus System](about:blank#_FutureBusSystem)
+- [2 🎯 TARGET: Identification Problem](about:blank#TARGETIdentificationProblem)
+- [3 📰 STORYBOARD: Go through the Spotlight](about:blank#STORYBOARDGothroughtheSpotlight)
+  - [3.1 📱 Pre-order](about:blank#Pre-order)
+  - [3.2 🔍 Find the Bus](about:blank#FindtheBus)
+  - [3.3 ✅ Make Sure](about:blank#nbspMakenbspSure)
+  - [3.4 👆 Get on the Bus](about:blank#_GetontheBus)
+  - [3.5 ❗ Warn Pedestrians](about:blank#nbspWarnnbspPedestrians)
+  - [3.6 👇 Get off the Bus](about:blank#GetofftheBus)
+- [4 💡 INTERACTION: Solutions to the Identification Problem](about:blank#INTERACTIONSolutionstotheIdentificationProblem)
+  - [4.1 ✨ Breathing Lights](about:blank#nbspBreathingnbspLights)
+  - [4.2 ✅ How to Make Sure](about:blank#nbspHownbsptonbspMakenbspSure)
+  - [4.3 ❔ Why We Choose the Light](about:blank#nbspWhynbspWenbspChoosenbspthenbspLight)
+  - [4.4 🎨 The Choice of Light Colors](about:blank#TheChoiceofLightColors)
+  - [4.5 📱 APP Interface](about:blank#APPInterface)
+- [5 💵 BUSINESS: Reduce System Cost](about:blank#BUSINESSReduceSystemCost)
+  - [5.1 🛠️ Modification of Existing Bus](about:blank#ModificationofExistingBus)
+  - [5.2 📸 Identification Light System Hardware](about:blank#IdentificationLightSystemHardware)
+  - [5.3 🚌 Multiple bus sizes](about:blank#Multiplebussizes)
 
 ## 🚌 BACKGROUND: Future Bus System
 
@@ -99,12 +99,12 @@ When the user successfully gets on the right bus and gets off at the right desti
 
 Let us explain why we give up the screen, graphics, and other elements, but use the basic color distinction and the brightness of the light to help users find the bus.
 
--   **Excellent Long-distance Recognizability**  
-    Needless to say, users definitely don’t want to go near the car to confirm whether the car is picking up.
--   **Privacy Protection**  
-    If the screen and image text are used to prompt the user, and the user needs to easily recognize it, it will inevitably involve the user’s name or screen name, mobile phone number, and other information, which is also difficult to accept.
--   **Low Cost**  
-    From the perspective of users, the reason why they choose to travel by public transportation is obvious because public transportation is cheap enough and affordable. This also requires us to retrofit the system to control costs as much as possible.
+- **Excellent Long-distance Recognizability**  
+  Needless to say, users definitely don’t want to go near the car to confirm whether the car is picking up.
+- **Privacy Protection**  
+  If the screen and image text are used to prompt the user, and the user needs to easily recognize it, it will inevitably involve the user’s name or screen name, mobile phone number, and other information, which is also difficult to accept.
+- **Low Cost**  
+  From the perspective of users, the reason why they choose to travel by public transportation is obvious because public transportation is cheap enough and affordable. This also requires us to retrofit the system to control costs as much as possible.
 
 ### 🎨 The Choice of Light Colors
 
@@ -138,12 +138,12 @@ Modification of existing bus
 
 Identification Light System Hardware
 
--   **Light Strips**  
-    Non-direct light strips are arranged on the top of the bus to help users find buses. By reflecting, the light gets softer and larger recognition area, which improves recognizability and reduces light pollution.
--   **Camera**  
-    A wide-angle face recognition camera is also arranged above the door frame to identify the user.
--   **Speaker**  
-    We arranged several speakers around the top to ensure that pedestrians in all directions can be reminded and that the reminder can have a certain orientation and reduce the disturbance.
+- **Light Strips**  
+  Non-direct light strips are arranged on the top of the bus to help users find buses. By reflecting, the light gets softer and larger recognition area, which improves recognizability and reduces light pollution.
+- **Camera**  
+  A wide-angle face recognition camera is also arranged above the door frame to identify the user.
+- **Speaker**  
+  We arranged several speakers around the top to ensure that pedestrians in all directions can be reminded and that the reminder can have a certain orientation and reduce the disturbance.
 
 ### 🚌 Multiple bus sizes
 

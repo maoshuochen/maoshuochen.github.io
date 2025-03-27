@@ -4,13 +4,13 @@ Fluxor is a future (2040) transportation system, aim at balancing regional devel
 
 Contents
 
--   [1 🏙️ Chapter1 Suburban Life in 2019](about:blank#Chapter1SuburbanLifein2019)
--   [2 ✨ Chapter2 Demand](about:blank#nbspChapter2nbspDemand)
--   [3 🚌 Chapter3 Fluxor](about:blank#Chapter3Fluxor)
-    -   [3.1 🏪 Mobile flash store](about:blank#Mobileflashstore)
-    -   [3.2 💊 AI clinic](about:blank#AIclinic)
-    -   [3.3 👾 Multiplayer VR gaming room](about:blank#MultiplayerVRgamingroom)
-    -   [3.4 🔬 Co-creation laboratory](about:blank#Co-creationlaboratory)
+- [1 🏙️ Chapter1 Suburban Life in 2019](about:blank#Chapter1SuburbanLifein2019)
+- [2 ✨ Chapter2 Demand](about:blank#nbspChapter2nbspDemand)
+- [3 🚌 Chapter3 Fluxor](about:blank#Chapter3Fluxor)
+  - [3.1 🏪 Mobile flash store](about:blank#Mobileflashstore)
+  - [3.2 💊 AI clinic](about:blank#AIclinic)
+  - [3.3 👾 Multiplayer VR gaming room](about:blank#MultiplayerVRgamingroom)
+  - [3.4 🔬 Co-creation laboratory](about:blank#Co-creationlaboratory)
 
 ## 🏙️ Chapter1 Suburban Life in 2019
 

@@ -6,8 +6,8 @@ Ingenious skin may invite the audience to experience a **_natural gesture intera
 
 Contents
 
--   [1 📁 Design](about:blank#_Design)
--   [2 ✨ Exhibition](about:blank#_Exhibition)
+- [1 📁 Design](about:blank#_Design)
+- [2 ✨ Exhibition](about:blank#_Exhibition)
 
 ## 📁 Design
 
