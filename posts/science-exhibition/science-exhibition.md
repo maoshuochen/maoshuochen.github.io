@@ -4,9 +4,9 @@ Posted on [2021-01-192022-03-07](https://maoshuochen.top/science-popularization-
 
 Contents
 
--   [1 🗺️ Layout&Touchpoint](about:blank#_LayoutTouchpoint)
--   [2 👨‍💻️ Tech Implement](about:blank#_Tech_Implement)
--   [3 🎨 Visual Design](about:blank#_Visual_Design)
+- [1 🗺️ Layout&Touchpoint](about:blank#_LayoutTouchpoint)
+- [2 👨‍💻️ Tech Implement](about:blank#_Tech_Implement)
+- [3 🎨 Visual Design](about:blank#_Visual_Design)
 
 ## 🗺️ Layout&Touchpoint
 
