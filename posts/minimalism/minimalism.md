@@ -2,13 +2,15 @@
 
 Minimalism is the lightweight design of aircraft seats, which based on balancing 3 factors: **_structure_**, **_materials_**, and **_user experience_**.
 
+<video src="./img/AircraftSeats.mp4"></video>
+
 ## 🎯 TARGET: Why do aircraft seats need to reduce weight?
 
 ---
 
 Taking ✈️ the Boeing-747 as an example, there are 💺 272 seats in economy class, with an estimated flight mileage of 65,437,20 km per year and fuel consumption of ⛽10.77 kg per km.
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/PortfolioSingleRGB_Page_11-2000x1414-1.webp)
+![](./img/PortfolioSingleRGB_Page_11-2000x1414-1.webp)
 
 If each economy class seat on a 747-400 is reduced by 1kg,  
 ⛽ **139 tons of fuel** can be saved in a year.  
@@ -29,7 +31,7 @@ _The structure of the aircraft seat needs to be able to withstand extreme accele
 
 For the structure of the aircraft seat, we managed to get the weight data of the aircraft seat (original model) and the Chinese national safety standard for aircraft seats (SAE AS 8049B). With the help of civil and mechanical engineering students, the following graphs show the results of the analysis of the data (weight and forces). The colored part shows that we can reduce the weight of the airplane seat.
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/PortfolioSingleRGB_Page_12-2000x1414-1.webp)
+![](./img/PortfolioSingleRGB_Page_12-2000x1414-1.webp)
 
 Aircraft seats (Original Model) weight & force analysis diagram
 
@@ -39,7 +41,7 @@ _The weight reduction of the seat will affect the user experience, and the low u
 
 From the perspectives of ergonomics and user demands, we conducted ergonomic scale research on airplane seats and Focus Group for airplane passengers. Here are some of the results from the user experience study.
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/PortfolioSingleRGB_Page_13-2000x1414-1.webp)
+![](./img/PortfolioSingleRGB_Page_13-2000x1414-1.webp)
 
 Aircraft seats ergonomics data & Focus Group Conclusions
 
@@ -49,7 +51,7 @@ _The material of the seat should have very good fire and flame resistance and ca
 
 In terms of materials, it is also regulated by the Chinese national safety standards for aircraft seats (SAE AS 8049B). On the basis of standards, to find new materials from companies such as DuPont from the perspective of lightweight. We also considered the possibility of metal frames with new materials.
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181230055033-768x316-1.webp)
+![](./img/material-768x316-1.webp)
 
 ## 🎨 DESIGN: How to reduce the weight of aircraft seats?
 
@@ -57,7 +59,7 @@ In terms of materials, it is also regulated by the Chinese national safety stand
 
 ### 💺 Appearance
 
-<iframe style="width: 100%; aspect-ratio: 16/12;" src="https://maoshuochen.top/xr/ModelD0611_XR.46.html" frameborder="0">
+<iframe style="width: 100%; aspect-ratio: 16/12;" src="/posts/minimalism/xr/ModelD0611_XR.46.html" frameborder="0">
 </iframe>
 
 ### 🔧 Structure
@@ -74,16 +76,16 @@ The bending of the sheet metal is carried out by extending the scale forward and
 
 We use the structure of a badminton racket as the frame part. The cross section of the frame uses an inner curved section to spread the impact force to the whole frame.
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/PortfolioSingleRGB_Page_14.webp)
+![](./img/PortfolioSingleRGB_Page_14.webp)
 
 ### 👨 User Experience
 
 The shape of the handrail is implied to divide the area of the user on both sides, the part of the backrest near the spine is close to the body curve, providing better support
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/PortfolioSingleRGB_Page_16-2000x1414-1.webp)
+![](./img/PortfolioSingleRGB_Page_16-2000x1414-1.webp)
 
 ### 🧱 Materials
 
 Cushion and backrest use composite sponge structure, and density distribution according to sitting pressure. Inspired by sneakers, use wavy sections to distribute pressure
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/PortfolioSingleRGB_Page_15-2000x1414-1.webp)
+![](./img/PortfolioSingleRGB_Page_15-2000x1414-1.webp)
