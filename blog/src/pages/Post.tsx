@@ -11,8 +11,8 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { renderToStaticMarkup } from "react-dom/server";
 
 const markdownPlugins = {
-  remarkPlugins: [remarkGfm, remarkRehype, rehypeRaw],
-  rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
+  remarkPlugins: [remarkGfm, remarkRehype],
+  rehypePlugins: [rehypeRaw, rehypeSlug, rehypeAutolinkHeadings],
 };
 
 const useFetchMarkdown = (url?: string) => {
@@ -71,14 +71,30 @@ export default function Post() {
     return <div>Article not found</div>;
   }
 
+  // 给 <img> 统一处理路径
+  const components = {
+    img: ({ src, alt }: { src?: string; alt?: string }) => {
+      const realSrc = src?.startsWith("./img/")
+        ? `/posts/${articleId}/img/${src.slice(6)}`
+        : src;
+      return (
+        <img
+          src={realSrc}
+          alt={alt}
+          className="rounded-lg border border-zinc-200"
+        />
+      );
+    },
+  };
+
   return (
     <div className="flex h-full w-full justify-center scroll-smooth pb-40 pt-20">
       <Markdown
         {...markdownPlugins}
-        className="prose prose-zinc w-1/2 max-w-none dark:prose-invert prose-h1:font-semibold prose-p:font-serif prose-p:text-xl prose-img:rounded-lg prose-img:border prose-img:border-zinc-200"
+        className="prose prose-zinc w-1/2 max-w-none dark:prose-invert prose-h1:font-semibold prose-p:font-serif prose-p:text-xl"
+        components={components}
       >
-        {/* 替换图片的相对路径为绝对路径 */}
-        {markdown.replace(/\.\/img\//g, `/posts/${articleId}/img/`)}
+        {markdown}
       </Markdown>
       <TOC toc={toc} />
     </div>
