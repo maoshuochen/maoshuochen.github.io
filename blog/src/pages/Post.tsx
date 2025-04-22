@@ -49,7 +49,7 @@ const useGenerateTOC = (markdown: string) => {
       return (
         <li
           key={id}
-          className={`px-${(level - 2) * 4} opacity-70 hover:opacity-100`}
+          className={`px-${(level - 2) * 4} opacity-50 hover:opacity-100`}
         >
           <a href={`#${id}`}>{text}</a>
         </li>
@@ -75,9 +75,10 @@ export default function Post() {
     <div className="flex h-full w-full justify-center scroll-smooth pb-40 pt-20">
       <Markdown
         {...markdownPlugins}
-        className="prose prose-zinc w-5/12 max-w-none dark:prose-invert prose-h1:font-semibold prose-p:font-serif prose-p:text-xl prose-img:rounded-lg"
+        className="prose prose-zinc w-1/2 max-w-none dark:prose-invert prose-h1:font-semibold prose-p:font-serif prose-p:text-xl prose-img:rounded-lg prose-img:border prose-img:border-zinc-200"
       >
-        {markdown}
+        {/* 替换图片的相对路径为绝对路径 */}
+        {markdown.replace(/\.\/img\//g, `/posts/${articleId}/img/`)}
       </Markdown>
       <TOC toc={toc} />
     </div>

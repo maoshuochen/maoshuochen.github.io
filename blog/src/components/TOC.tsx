@@ -8,7 +8,7 @@ const TOC: React.FC<TOCProps> = ({ toc }) => {
   return (
     <nav
       aria-label="Table of contents"
-      className="fixed bottom-20 right-20 max-w-72 p-0"
+      className="fixed bottom-20 right-12 max-w-72 p-0"
     >
       <ul>{toc}</ul>
     </nav>

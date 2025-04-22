@@ -8,7 +8,7 @@ PaperClip is a _**literature knowledge management tool**_ for **_academic resear
 
 **[👉 Click the link explore the prototype in full screen!](https://maoshuochen.top/paperclip-prototype/index.html#id=aulfuv&p=subs&sc=2&c=1)**
 
-<iframe style="aspect-ratio: 16/9;" src="https://maoshuochen.top/paperclip-prototype/index.html#id=aulfuv&amp;p=subs&amp;sc=2&amp;c=1" onload="this.style.display='block'" width="100%" frameborder="0">
+<iframe style="aspect-ratio: 16/9;" src="/posts/paperclip/paperclip-prototype/index.html#id=aulfuv&amp;p=subs&amp;sc=2&amp;c=1" onload="this.style.display='block'" width="100%" frameborder="0">
 </iframe>
 
 ## 📚 Research
@@ -19,19 +19,17 @@ In the research process, researchers need to deal with a large amount of literar
 
 ### 👨‍🎓 User Research – Academic Researcher
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656867536-Slide8-scaled.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656867536-Slide8-scaled.jpg)
-
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656867546-Slide9-scaled.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656867546-Slide9-scaled.jpg)
+![](./img/1656867536-Slide8.jpg)
+![](./img/1656867546-Slide9.jpg)
 
 ### 🔍 Tech Research – Knowledge Graph
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656867581-Slide6-scaled.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656867581-Slide6-scaled.jpg)
-
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656867877-Slide12-scaled.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656867877-Slide12-scaled.jpg)
+![](./img/1656867581-Slide6.jpg)
+![](./img/1656867877-Slide12.jpg)
 
 ### 📖 Competitive Product – Knowledge Management
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656867958-Slide19-scaled.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656867958-Slide19-scaled.jpg)
+![](./img/1656867958-Slide19.jpg)
 
 ## 🎯 Concept
 
@@ -39,17 +37,14 @@ In the research process, researchers need to deal with a large amount of literar
 
 ### 🔨 Product Framework
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656868020-Slide23-scaled.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656868020-Slide23-scaled.jpg)
-
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656868088-Slide24-scaled.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656868088-Slide24-scaled.jpg)
-
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656868106-Slide25-scaled.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656868106-Slide25-scaled.jpg)
+![](./img/1656868020-Slide23.jpg)
+![](./img/1656868088-Slide24.jpg)
+![](./img/1656868106-Slide25.jpg)
 
 ### 🔩 Define Functions
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656868126-Slide26-scaled.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656868126-Slide26-scaled.jpg)
-
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656868235-Slide27-scaled.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2022/07/1656868235-Slide27-scaled.jpg)
+![](./img/1656868126-Slide26.jpg)
+![](./img/1656868235-Slide27.jpg)
 
 ### 🔍 Technical Framework
 
