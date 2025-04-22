@@ -71,7 +71,7 @@ export default function Post() {
     return <div>Article not found</div>;
   }
 
-  // 给 <img> 统一处理路径
+  //替换图片和视频路径
   const components = {
     img: ({ src, alt }: { src?: string; alt?: string }) => {
       const realSrc = src?.startsWith("./img/")
@@ -82,6 +82,20 @@ export default function Post() {
           src={realSrc}
           alt={alt}
           className="rounded-lg border border-zinc-200"
+        />
+      );
+    },
+    video: ({ src, ...props }: any) => {
+      const realSrc = src?.startsWith("./img/")
+        ? `/posts/${articleId}/img/${src.slice(6)}`
+        : src;
+      return (
+        <video
+          controls
+          loading="lazy"
+          className="my-4 w-full rounded-lg border border-zinc-200"
+          src={realSrc}
+          {...props}
         />
       );
     },
