@@ -36,21 +36,21 @@ const useGenerateTOC = (markdown: string) => {
     const html = renderToStaticMarkup(
       <Markdown {...markdownPlugins}>{markdown}</Markdown>,
     );
-
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, "text/html");
     const headings = Array.from(doc.querySelectorAll("h2, h3, h4, h5, h6"));
 
+    // 为不同层级生成对应缩进
+    const indentClasses = ["pl-0", "pl-4", "pl-8", "pl-12", "pl-16"];
+
     const tocItems = headings.map((heading) => {
-      const level = parseInt(heading.tagName[1], 10);
+      const level = parseInt(heading.tagName[1], 10); // 2..6
       const id = heading.id;
       const text = heading.textContent || "";
 
+      const indent = indentClasses[level - 2] || "pl-0";
       return (
-        <li
-          key={id}
-          className={`px-${(level - 2) * 4} opacity-50 hover:opacity-100`}
-        >
+        <li key={id} className={`${indent} opacity-50 hover:opacity-100`}>
           <a href={`#${id}`}>{text}</a>
         </li>
       );
@@ -63,7 +63,7 @@ const useGenerateTOC = (markdown: string) => {
 
 export default function Post() {
   const { articleId } = useParams();
-  const article = articles.find((article) => article.id === articleId);
+  const article = articles.find((a) => a.id === articleId);
   const markdown = useFetchMarkdown("/posts/" + article?.content_url);
   const toc = useGenerateTOC(markdown);
 
@@ -71,7 +71,6 @@ export default function Post() {
     return <div>Article not found</div>;
   }
 
-  //替换图片和视频路径
   const components = {
     img: ({ src, alt }: { src?: string; alt?: string }) => {
       const realSrc = src?.startsWith("./img/")
@@ -81,7 +80,7 @@ export default function Post() {
         <img
           src={realSrc}
           alt={alt}
-          className="rounded-lg border border-zinc-200"
+          className="h-auto w-full rounded-lg border border-zinc-200"
         />
       );
     },
@@ -102,15 +101,18 @@ export default function Post() {
   };
 
   return (
-    <div className="flex h-full w-full justify-center scroll-smooth pb-40 pt-20">
-      <Markdown
-        {...markdownPlugins}
-        className="prose prose-zinc w-1/2 max-w-none dark:prose-invert prose-h1:font-semibold prose-p:font-serif prose-p:text-xl"
-        components={components}
-      >
-        {markdown}
-      </Markdown>
-      <TOC toc={toc} />
+    <div className="flex h-full w-full flex-col justify-center scroll-smooth px-8 pb-40 pt-10 sm:pt-20 lg:flex-row lg:px-0">
+      {/* 文章内容区：小屏 100% 宽，大屏 50% */}
+      <div className="prose prose-zinc w-full max-w-none dark:prose-invert prose-h1:text-2xl prose-h1:font-semibold prose-h2:text-xl prose-h3:text-lg prose-h4:text-base prose-p:font-serif prose-p:text-base sm:prose-h1:text-3xl sm:prose-h2:text-2xl sm:prose-h3:text-xl sm:prose-h4:text-lg sm:prose-p:text-xl lg:w-1/2">
+        <Markdown {...markdownPlugins} components={components}>
+          {markdown}
+        </Markdown>
+      </div>
+
+      {/* 目录区：小屏隐藏，大屏显示，且固定在可视顶端 */}
+      <aside className="sticky top-20 hidden w-full self-start lg:ml-8 lg:block lg:w-1/4">
+        <TOC toc={toc} />
+      </aside>
     </div>
   );
 }
