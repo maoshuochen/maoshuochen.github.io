@@ -24,14 +24,7 @@ export const articles = [
     id: "spotlight",
     title: "Spotlight",
     subtitle: "Future Transit Recognition System",
-    image_url: "minimalism/minimalism-cover.jpg",
+    image_url: "spotlight/spotlight-cover.webp",
     content_url: "spotlight/spotlight.md",
-  },
-  {
-    id: "5",
-    title: "Minimalism",
-    subtitle: "Aircraft Seats Lightweight Design",
-    image_url: "minimalism/minimalism-cover.jpg",
-    content_url: "minimalism/minimalism.md",
   },
 ];
