@@ -1,35 +1,8 @@
 # Spotlight – Future Transit Recognition System
 
-Posted on [2020-05-152022-03-07](https://maoshuochen.top/spotlight-future-transit-recognition-system/) by [Maoshuo Chen](https://maoshuochen.top/author/maoshuochen/)
-
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/f0f11e6e2947f347ee58a480568f950-2000x1125-1.webp)
+![](./img/f0f11e6e2947f347ee58a480568f950-2000x1125-1.webp)
 
 **_“ Spotlight is a public transportation recognition system based on future intelligent route planning bus services. This system uses light, sound, and AR to help users identify the bus they are booking from among many similar vehicles. ”_**
-
-Contents
-
-- [1 🚌 BACKGROUND: Future Bus System](about:blank#BACKGROUNDFutureBusSystem)
-  - [1.1 🏙️ Urbanization](about:blank#_Urbanization)
-  - [1.2 🌐 Internet of Vehicles](about:blank#InternetofVehicles)
-  - [1.3 🚌 Future Bus System](about:blank#_FutureBusSystem)
-- [2 🎯 TARGET: Identification Problem](about:blank#TARGETIdentificationProblem)
-- [3 📰 STORYBOARD: Go through the Spotlight](about:blank#STORYBOARDGothroughtheSpotlight)
-  - [3.1 📱 Pre-order](about:blank#Pre-order)
-  - [3.2 🔍 Find the Bus](about:blank#FindtheBus)
-  - [3.3 ✅ Make Sure](about:blank#nbspMakenbspSure)
-  - [3.4 👆 Get on the Bus](about:blank#_GetontheBus)
-  - [3.5 ❗ Warn Pedestrians](about:blank#nbspWarnnbspPedestrians)
-  - [3.6 👇 Get off the Bus](about:blank#GetofftheBus)
-- [4 💡 INTERACTION: Solutions to the Identification Problem](about:blank#INTERACTIONSolutionstotheIdentificationProblem)
-  - [4.1 ✨ Breathing Lights](about:blank#nbspBreathingnbspLights)
-  - [4.2 ✅ How to Make Sure](about:blank#nbspHownbsptonbspMakenbspSure)
-  - [4.3 ❔ Why We Choose the Light](about:blank#nbspWhynbspWenbspChoosenbspthenbspLight)
-  - [4.4 🎨 The Choice of Light Colors](about:blank#TheChoiceofLightColors)
-  - [4.5 📱 APP Interface](about:blank#APPInterface)
-- [5 💵 BUSINESS: Reduce System Cost](about:blank#BUSINESSReduceSystemCost)
-  - [5.1 🛠️ Modification of Existing Bus](about:blank#ModificationofExistingBus)
-  - [5.2 📸 Identification Light System Hardware](about:blank#IdentificationLightSystemHardware)
-  - [5.3 🚌 Multiple bus sizes](about:blank#Multiplebussizes)
 
 ## 🚌 BACKGROUND: Future Bus System
 
@@ -45,7 +18,7 @@ With the development of technologies such as 5G, big data, autonomous driving, a
 
 In the future, the bus route will no longer be fixed, but the intelligent transportation system will be flexibly planned according to the actual situation.
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/Asset-1.webp)
+![](./img/Asset-1.webp)
 
 There are no fixed bus routes in the future
 
@@ -53,7 +26,7 @@ There are no fixed bus routes in the future
 
 Such a highly flexible public transportation system can also create new problems. At the peak time, many buses with the same appearance will appear at the same time and in the same location. It is naturally a problem for users to find the right bus that should get on.
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/image-1581003482679.webp)
+![](./img/image-1581003482679.webp)
 
 In response to such a problem, we have designed a car-recognition interactive system – Spotlight. It takes the additional lights of the vehicle as the core, the mobile AR recognition, and sound as the supplement.
 
@@ -63,29 +36,39 @@ In response to such a problem, we have designed a car-recognition interactive sy
 
 We experience this system from the perspective of a future office worker John. When John needs to travel, he only needs to book a car in the APP, enter the starting point first, and the system will assign the nearest reasonable parking point. Enter the endpoint again, and after confirming, the system will assign an on-street intelligent bus, pick John at the scheduled departure point at the scheduled time, and prompt John to identify the color of the bus.
 
+<video src="./img/SpotlightStoryboard-1_x264.mp4"></video>
+
 ### 🔍 Find the Bus
 
 The bus will arrive at the boarding point in advance to wait for John, and the lights slowly breathe as a stop. After John arrives at the pick-up location, there may be multiple buses at the same location. At this point, John can lift the phone and use the app’s AR function to assist identification. At this time, the mobile phone interface becomes dark, and when John’s reserved bus appears on the interface, AR will highlight the bus to assist John’s identification.
+
+<video src="./img/SpotlightStoryboard-2_x264.mp4"></video>
 
 ### ✅ Make Sure
 
 When John finds the bus he has booked, AR will also prompt the fastest boarding route. As John approached the bus, the breathing rate of the lights accelerated to remind John.
 
+<video src="./img/SpotlightStoryboard-3_x264.mp4"></video>
+
 ### 👆 Get on the Bus
 
 When John reached the door, the door opened automatically for him. When John stepped on the pedal, the green light around the B-pillar door frame and the pedal sounded the correct tone. If someone follows John into the wrong car, a red light will light up around the B pillar door frame, and an error sound will sound to prevent the user from getting in the wrong car. When the vehicle exits, the overhead lights will go out. At low speeds, buses will also play a soft, natural sound continuously to remind the vehicle that it is driving. We chose here the sound of the waves.
+
+<video src="./img/SpotlightStoryboard-4_x264.mp4"></video>
 
 ### ❗ Warn Pedestrians
 
 When a passerby blocks the driving route, the overhead light will flash red, and the closer to the passerby, the faster the strobe light. The sound of the driving which like wave sound, also became intense to warn passersby.
 
+<video src="./img/SpotlightStoryboard-5_x264.mp4"></video>
+
 ### 👇 Get off the Bus
 
 John’s destination has arrived. When John got out of the car, a green light would also light up around the door frame and the correct alert sounded. If someone followed John but got in the wrong place, a red light would turn on around the door frame, and an error sound would sound to prevent her from getting in the wrong car.
 
-## 💡 INTERACTION: Solutions to the Identification Problem
+<video src="./img/SpotlightStoryboard-6_x264.mp4"></video>
 
-INTERACTION: Identification Problem of Future Bus System
+## 💡 INTERACTION: Solutions to the Identification Problem
 
 ### ✨ Breathing Lights
 
@@ -112,15 +95,11 @@ Specific to the choice of colors, we should choose colors that are sufficiently 
 
 There are three factors will affect the colors of the light that the users see: the colors of the environment, the brightness of the light, the color shift of the light device. So we remove the orange that may be confused with the yellow. And blue that may be confused with indigo.
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/Asset-2-768x366-1.webp)
-
-The Choice of Light Colors
+![](./img/Asset-2.webp)
 
 ### 📱 APP Interface
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/PortfolioSingleRGB_Page_24-2000x1414-1.webp)
-
-APP Interface
+![](./img/PortfolioSingleRGB_Page_24-2000x1414-1.webp)
 
 ## 💵 BUSINESS: Reduce System Cost
 
@@ -128,15 +107,11 @@ APP Interface
 
 Our identification system can be implemented by retrofitting existing buses. Take a shared bicycle as an example. It is good to design a new car from the beginning like Mobike. It can also be done by networking traditional models and adding some hardware like Ofo. Our solution can also be achieved by connecting the buses to the bus networking system and adding identification lights. It does not necessarily require advanced technologies such as unmanned driving.
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/Asset-3-768x113-1.webp)
-
-Modification of existing bus
+![](./img/Asset-3.webp)
 
 ### 📸 Identification Light System Hardware
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/Asset-4-768x382-1.webp)
-
-Identification Light System Hardware
+![](./img/Asset-4.webp)
 
 - **Light Strips**  
   Non-direct light strips are arranged on the top of the bus to help users find buses. By reflecting, the light gets softer and larger recognition area, which improves recognizability and reduces light pollution.
@@ -149,10 +124,4 @@ Identification Light System Hardware
 
 The size and load capacity of the car body can also be changed according to the needs of different regions, different time periods, and different routes to achieve more optimal distribution and adapt to a wider range of scenarios.
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/Asset-5-768x170-1.webp)
-
-Multiple bus sizes
-
-Posted in <a href="https://maoshuochen.top/category/college-of-design-and-innovation-in-tongji-univeristy/" rel="category tag">College of Design and Innovation in Tongji Univeristy</a>
-
-本文转自 [https://maoshuochen.top/spotlight-future-transit-recognition-system/](https://maoshuochen.top/spotlight-future-transit-recognition-system/)，如有侵权，请联系删除。
+![](./img/Asset-5.webp)
