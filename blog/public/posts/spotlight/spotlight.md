@@ -1,35 +1,8 @@
 # Spotlight – Future Transit Recognition System
 
-Posted on [2020-05-152022-03-07](https://maoshuochen.top/spotlight-future-transit-recognition-system/) by [Maoshuo Chen](https://maoshuochen.top/author/maoshuochen/)
-
 ![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/f0f11e6e2947f347ee58a480568f950-2000x1125-1.webp)
 
 **_“ Spotlight is a public transportation recognition system based on future intelligent route planning bus services. This system uses light, sound, and AR to help users identify the bus they are booking from among many similar vehicles. ”_**
-
-Contents
-
-- [1 🚌 BACKGROUND: Future Bus System](about:blank#BACKGROUNDFutureBusSystem)
-  - [1.1 🏙️ Urbanization](about:blank#_Urbanization)
-  - [1.2 🌐 Internet of Vehicles](about:blank#InternetofVehicles)
-  - [1.3 🚌 Future Bus System](about:blank#_FutureBusSystem)
-- [2 🎯 TARGET: Identification Problem](about:blank#TARGETIdentificationProblem)
-- [3 📰 STORYBOARD: Go through the Spotlight](about:blank#STORYBOARDGothroughtheSpotlight)
-  - [3.1 📱 Pre-order](about:blank#Pre-order)
-  - [3.2 🔍 Find the Bus](about:blank#FindtheBus)
-  - [3.3 ✅ Make Sure](about:blank#nbspMakenbspSure)
-  - [3.4 👆 Get on the Bus](about:blank#_GetontheBus)
-  - [3.5 ❗ Warn Pedestrians](about:blank#nbspWarnnbspPedestrians)
-  - [3.6 👇 Get off the Bus](about:blank#GetofftheBus)
-- [4 💡 INTERACTION: Solutions to the Identification Problem](about:blank#INTERACTIONSolutionstotheIdentificationProblem)
-  - [4.1 ✨ Breathing Lights](about:blank#nbspBreathingnbspLights)
-  - [4.2 ✅ How to Make Sure](about:blank#nbspHownbsptonbspMakenbspSure)
-  - [4.3 ❔ Why We Choose the Light](about:blank#nbspWhynbspWenbspChoosenbspthenbspLight)
-  - [4.4 🎨 The Choice of Light Colors](about:blank#TheChoiceofLightColors)
-  - [4.5 📱 APP Interface](about:blank#APPInterface)
-- [5 💵 BUSINESS: Reduce System Cost](about:blank#BUSINESSReduceSystemCost)
-  - [5.1 🛠️ Modification of Existing Bus](about:blank#ModificationofExistingBus)
-  - [5.2 📸 Identification Light System Hardware](about:blank#IdentificationLightSystemHardware)
-  - [5.3 🚌 Multiple bus sizes](about:blank#Multiplebussizes)
 
 ## 🚌 BACKGROUND: Future Bus System
 
@@ -152,7 +125,3 @@ The size and load capacity of the car body can also be changed according to the 
 ![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/Asset-5-768x170-1.webp)
 
 Multiple bus sizes
-
-Posted in <a href="https://maoshuochen.top/category/college-of-design-and-innovation-in-tongji-univeristy/" rel="category tag">College of Design and Innovation in Tongji Univeristy</a>
-
-本文转自 [https://maoshuochen.top/spotlight-future-transit-recognition-system/](https://maoshuochen.top/spotlight-future-transit-recognition-system/)，如有侵权，请联系删除。

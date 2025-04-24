@@ -117,6 +117,8 @@ function getMarkdownComponents(articleId?: string) {
     video: ({ src, ...props }: any) => (
       <video
         controls
+        autoPlay
+        muted
         loading="lazy"
         className="my-4 w-full rounded-lg border border-zinc-200"
         src={resolvePath(src)}
