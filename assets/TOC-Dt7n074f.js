@@ -1,0 +1,1 @@
+import{j as a,l}from"./index-CZuK05Is.js";const o=({toc:e})=>a.jsx("nav",{"aria-label":"Table of contents",className:"fixed bottom-20 right-10 w-72 p-0",children:a.jsx("ul",{children:e.map(({id:s,text:t,level:r})=>a.jsx("li",{className:l(`px-${(r-2)*4}`,"opacity-70 transition hover:opacity-100"),children:a.jsx("a",{href:`#${s}`,children:t})},s))})});export{o as default};
