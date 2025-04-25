@@ -99,7 +99,7 @@ There are three factors will affect the colors of the light that the users see: 
 
 ### 📱 APP Interface
 
-![](./img/PortfolioSingleRGB_Page_24-2000x1414-1.webp)
+![](./img/PortfolioSingleRGB_Page_24-2000x1414.webp)
 
 ## 💵 BUSINESS: Reduce System Cost
 

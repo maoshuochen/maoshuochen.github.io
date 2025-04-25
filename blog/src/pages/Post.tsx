@@ -1,39 +1,41 @@
+import React, { Suspense, lazy, useMemo, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { renderToStaticMarkup } from "react-dom/server";
 import clsx from "clsx";
-import Markdown from "react-markdown";
-import TOC from "@/components/TOC";
 import { articles } from "@/data";
+import { generateTOC } from "@/utils/parseTOC";
 
+import remarkParse from "remark-parse";
 import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import rehypeRaw from "rehype-raw";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeStringify from "rehype-stringify";
 
-const markdownPlugins = {
-  remarkPlugins: [remarkGfm, remarkRehype],
-  rehypePlugins: [rehypeRaw, rehypeSlug, rehypeAutolinkHeadings],
-};
+const Markdown = lazy(() => import("react-markdown"));
+const TOC = lazy(() => import("@/components/TOC"));
 
 export default function Post() {
   const { articleId } = useParams();
-  const article = articles.find((a) => a.id === articleId);
-  const markdown = useMarkdown(`/posts/${article?.content_url}`);
-  const toc = useTOC(markdown);
+  const article = useMemo(
+    () => articles.find((a) => a.id === articleId),
+    [articleId],
+  );
 
-  if (!article) return <div>Article not found</div>;
+  const markdown = useMarkdown(
+    article?.content_url ? `/posts/${article.content_url}` : undefined,
+  );
+
+  const toc = useMemo(() => generateTOC(markdown), [markdown]);
+
+  if (!article)
+    return (
+      <div className="p-10 text-center text-red-500">Article not found</div>
+    );
 
   return (
-    <div
-      className={clsx(
-        "flex h-full w-full flex-col justify-center scroll-smooth",
-        "px-8 pb-20 pt-10",
-        "sm:px-4 sm:pb-40 sm:pt-20",
-        "lg:flex-row lg:px-0",
-      )}
-    >
+    <div className="flex h-full w-full flex-col justify-center scroll-smooth px-8 pb-20 pt-10 sm:px-4 sm:pb-40 sm:pt-20 lg:flex-row lg:px-0">
+      {/* Markdown 内容区域 */}
       <div
         className={clsx(
           "prose prose-zinc w-full max-w-none dark:prose-invert",
@@ -45,20 +47,45 @@ export default function Post() {
           "lg:w-1/2",
         )}
       >
-        <Markdown
-          components={getMarkdownComponents(articleId)}
-          {...markdownPlugins}
-        >
-          {markdown}
-        </Markdown>
+        <Suspense fallback={<div>Loading content…</div>}>
+          <Markdown
+            remarkPlugins={[remarkParse, remarkGfm, remarkRehype]}
+            rehypePlugins={[
+              rehypeRaw,
+              rehypeSlug,
+              rehypeAutolinkHeadings,
+              rehypeStringify,
+            ]}
+            components={getMarkdownComponents(articleId)}
+          >
+            {markdown}
+          </Markdown>
+        </Suspense>
       </div>
-      <aside className="sticky top-20 hidden w-full self-start lg:ml-8 lg:block lg:w-1/4">
-        <TOC toc={toc} />
+
+      {/* TOC 目录 */}
+      <aside className="fixed bottom-20 right-10 hidden w-72 lg:block">
+        <Suspense fallback={<div>Loading TOC…</div>}>
+          <ul>
+            {toc.map(({ id, text, level }) => (
+              <li
+                key={id}
+                className={clsx(
+                  `px-${(level - 2) * 4}`,
+                  "opacity-50 hover:opacity-100",
+                )}
+              >
+                <a href={`#${id}`}>{text}</a>
+              </li>
+            ))}
+          </ul>
+        </Suspense>
       </aside>
     </div>
   );
 }
 
+// 自定义 Hook：加载 Markdown 内容
 function useMarkdown(url?: string) {
   const [markdown, setMarkdown] = useState("Loading...");
   useEffect(() => {
@@ -71,59 +98,42 @@ function useMarkdown(url?: string) {
   return markdown;
 }
 
-function useTOC(markdown: string) {
-  const [toc, setTOC] = useState<React.ReactNode[]>([]);
-
-  useEffect(() => {
-    const html = renderToStaticMarkup(
-      <Markdown {...markdownPlugins}>{markdown}</Markdown>,
-    );
-    const doc = new DOMParser().parseFromString(html, "text/html");
-    const headings = Array.from(doc.querySelectorAll("h2, h3, h4, h5, h6"));
-    const tocItems = headings.map((heading) => {
-      const level = parseInt(heading.tagName[1], 10);
-      const id = heading.id;
-      const text = heading.textContent || "";
-      return (
-        <li
-          key={id}
-          className={clsx(
-            `pl-${(level - 2) * 4}`,
-            "opacity-50 hover:opacity-100",
-          )}
-        >
-          <a href={`#${id}`}>{text}</a>
-        </li>
-      );
-    });
-    setTOC(tocItems);
-  }, [markdown]);
-
-  return toc;
-}
-
+// Markdown 图片 & 视频处理
 function getMarkdownComponents(articleId?: string) {
   const resolvePath = (src?: string) =>
     src?.startsWith("./img/") ? `/posts/${articleId}/img/${src.slice(6)}` : src;
 
   return {
-    img: ({ src, alt }: { src?: string; alt?: string }) => (
-      <img
-        src={resolvePath(src)}
-        alt={alt}
-        className="h-auto w-full rounded-lg border border-zinc-200"
-      />
-    ),
-    video: ({ src, ...props }: any) => (
-      <video
-        controls
-        autoPlay
-        muted
-        loading="lazy"
-        className="my-4 w-full rounded-lg border border-zinc-200"
-        src={resolvePath(src)}
-        {...props}
-      />
-    ),
+    img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => {
+      const { src, alt, className, ...rest } = props;
+      return (
+        <img
+          loading="lazy"
+          src={resolvePath(src)}
+          alt={alt}
+          className={clsx(
+            className,
+            "h-auto w-full rounded-lg border border-zinc-200",
+          )}
+          {...rest}
+        />
+      );
+    },
+    video: (props: React.VideoHTMLAttributes<HTMLVideoElement>) => {
+      const { src, className, ...rest } = props;
+      return (
+        <video
+          controls
+          autoPlay
+          muted
+          src={resolvePath(src as string)}
+          className={clsx(
+            className,
+            "my-4 w-full rounded-lg border border-zinc-200",
+          )}
+          {...rest}
+        />
+      );
+    },
   };
 }
