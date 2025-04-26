@@ -7,12 +7,14 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Header />}>
       <Route index element={<Home />} />
-      <Route path="post/:articleId" element={<Post />} />
+      <Route path="post/:articleId" element={<Post />} />\
+      <SpeedInsights />
     </Route>,
   ),
 );

@@ -1,7 +1,6 @@
 import React from "react";
 import clsx from "clsx";
 
-// 自定义 TOCItem 类型
 interface TOCItem {
   id: string;
   text: string;
