@@ -13,8 +13,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Header />}>
       <Route index element={<Home />} />
-      <Route path="post/:articleId" element={<Post />} />\
-      <SpeedInsights />
+      <Route path="post/:articleId" element={<Post />} />
     </Route>,
   ),
 );
@@ -22,6 +21,7 @@ export default function App() {
   return (
     <div className="h-full w-full">
       <RouterProvider router={router} />
+      <SpeedInsights />
     </div>
   );
 }
