@@ -6,7 +6,7 @@ PaperClip is a _**literature knowledge management tool**_ for **_academic resear
 
 ---
 
-**[👉 Click the link explore the prototype in full screen!](https://maoshuochen.top/paperclip-prototype/index.html#id=aulfuv&p=subs&sc=2&c=1)**
+**[👉 Click the link explore the prototype in full screen!](/posts/paperclip/paperclip-prototype/index.html#id=aulfuv&p=subs&sc=2&c=1)**
 
 <iframe style="aspect-ratio: 16/9;" src="/posts/paperclip/paperclip-prototype/index.html#id=aulfuv&amp;p=subs&amp;sc=2&amp;c=1" onload="this.style.display='block'" width="100%" frameborder="0">
 </iframe>

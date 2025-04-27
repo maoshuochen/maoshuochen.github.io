@@ -44,8 +44,8 @@ export default function Post() {
   return (
     <div
       className={clsx(
-        "flex h-full w-full flex-col justify-center scroll-smooth",
-        "px-8 pb-20 pt-10 sm:px-4 sm:pb-40 sm:pt-20 lg:flex-row lg:px-0",
+        "flex h-full w-full flex-col scroll-smooth",
+        "px-8 pb-10 pt-10 sm:px-20 sm:pt-20 lg:px-40",
       )}
     >
       {/* Markdown 主体 */}
@@ -57,7 +57,7 @@ export default function Post() {
           "prose-h3:text-lg sm:prose-h3:text-xl",
           "prose-h4:text-base sm:prose-h4:text-lg",
           "prose-p:text-base sm:prose-p:text-lg",
-          "lg:w-1/2",
+          "lg:w-2/3",
         )}
       >
         <Suspense fallback={<div>Loading content…</div>}>
