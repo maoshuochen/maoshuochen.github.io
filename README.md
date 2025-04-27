@@ -1,16 +1,14 @@
 # Blog
 
-URL: https://maoshuochen.github.io
+URL:
+https://maoshuochen.com
+https://maoshuochen.github.io
 
 Stack:
 
--   Vite
--   React
--   GitHub Pages
--   Tailwind CSS
--   Shadcn UI
+-   Vite + React
+-   Tailwind CSS + Shadcn UI
+-   Deploy: Vercel/GitHub Pages
 
 -   Dev：npm run dev
 -   Deploy: npm run deploy
-
-https://medium.com/@devxprite/how-to-deploy-vite-react-app-to-github-pages-00e150f73961
