@@ -2,6 +2,8 @@
 
 PaperClip is a _**literature knowledge management tool**_ for **_academic researchers_**, helping them dig out valuable knowledge from readings and notes, assist thinking and analysis, and support the research process like topic selection. Its mental model is the zettelkasten card box note-taking method, and knowledge graph technology supports its function.
 
+<video src="./img/paperclip.mp4"></video>
+
 ## 💻 Prototype
 
 ---
