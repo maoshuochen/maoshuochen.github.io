@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link, Outlet } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { clsx } from "clsx";
 
 interface NavLinkProps {
@@ -23,6 +23,13 @@ const NavLink = ({ to, children, onClick }: NavLinkProps) => (
 export default function Header() {
   const [open, setOpen] = useState(false);
 
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.documentElement.classList.toggle("dark", !isDarkMode);
+  };
+
   const links = [
     { to: "/", label: "Projects" },
     { to: "/about", label: "About me" },
@@ -32,7 +39,9 @@ export default function Header() {
     <>
       <header
         className={clsx(
-          "sticky top-0 w-full border-b border-zinc-100 bg-white px-4",
+          "sticky top-0 w-full border-b px-4",
+          "bg-background dark:bg-background",
+          "border-zinc-100 dark:border-zinc-800",
           "sm:px-8",
         )}
       >
@@ -53,6 +62,13 @@ export default function Header() {
                 {label}
               </NavLink>
             ))}
+            <button onClick={toggleDarkMode} aria-label="Toggle dark mode">
+              {isDarkMode ? (
+                <Sun className="h-6 w-6" />
+              ) : (
+                <Moon className="h-6 w-6" />
+              )}
+            </button>
           </nav>
 
           {/* Mobile menu button */}

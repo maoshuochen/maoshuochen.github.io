@@ -51,9 +51,11 @@ function ArticleCard({ article }: { article: (typeof articles)[number] }) {
       <Link to={`/post/${article.id}`}>
         <div
           className={clsx(
-            "h-56 w-full rounded-xl border border-zinc-100",
+            "h-56 w-full rounded-xl",
+            "border border-zinc-100 dark:border-zinc-800",
             "bg-white bg-cover p-6",
-            "duration-300 hover:shadow-xl hover:shadow-zinc-200",
+            "duration-300 hover:shadow-xl",
+            "hover:shadow-zinc-200 dark:hover:shadow-zinc-900",
             "sm:h-72 sm:p-12",
           )}
           style={{ backgroundImage: `url(/posts/${article.image_url})` }}
