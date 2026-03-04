@@ -10,6 +10,7 @@ import rehypeRaw from "rehype-raw";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeStringify from "rehype-stringify";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 interface TOCItem {
   id: string;
@@ -23,12 +24,14 @@ const TOC = lazy(() => import("@/components/TOC"));
 
 export default function Post() {
   const { articleId } = useParams<{ articleId: string }>();
+  const { language } = useLanguage();
   const article = useMemo(
     () => articles.find((a) => a.id === articleId),
     [articleId],
   );
 
-  const markdown = useMarkdown(`/posts/${article?.content_url || ""}`);
+  const contentUrl = language === 'zh' ? article?.content_url_zh : article?.content_url;
+  const markdown = useMarkdown(`/posts/${contentUrl || ""}`);
   const parsedHTML = useMemo(() => processMarkdown(markdown), [markdown]);
   const toc: TOCItem[] = useMemo(
     () => parseTOCFromHTML(parsedHTML),

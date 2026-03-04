@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Home from "@/pages/Home";
 import Post from "@/pages/Post";
+import About from "@/pages/About";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="post/:articleId" element={<Post />} />
+      <Route path="about" element={<About />} />
     </Route>,
   ),
 );

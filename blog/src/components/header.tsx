@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Link, Outlet } from "react-router-dom";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { clsx } from "clsx";
+import { useLanguage } from "@/i18n/LanguageContext";
+import LanguageToggle from "@/components/LanguageToggle";
 
 interface NavLinkProps {
   to: string;
@@ -22,8 +24,8 @@ const NavLink = ({ to, children, onClick }: NavLinkProps) => (
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const { t } = useLanguage();
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
@@ -31,8 +33,8 @@ export default function Header() {
   };
 
   const links = [
-    { to: "/", label: "Projects" },
-    { to: "/about", label: "About me" },
+    { to: "/", label: t('projects') },
+    { to: "/about", label: t('aboutMe') },
   ];
 
   return (
@@ -62,6 +64,7 @@ export default function Header() {
                 {label}
               </NavLink>
             ))}
+            <LanguageToggle />
             <button onClick={toggleDarkMode} aria-label="Toggle dark mode">
               {isDarkMode ? (
                 <Sun className="h-6 w-6" />
@@ -89,6 +92,9 @@ export default function Header() {
                 {label}
               </NavLink>
             ))}
+            <div className="px-2">
+              <LanguageToggle />
+            </div>
           </nav>
         )}
       </header>
