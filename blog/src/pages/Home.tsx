@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import clsx from "clsx";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { TranslationKey } from "@/i18n/translations";
+import { useState } from "react";
 
 export default function Home() {
   return (
@@ -16,6 +17,13 @@ export default function Home() {
 // 🎯 Intro 区域
 function Intro() {
   const { t } = useLanguage();
+  const [isWaving, setIsWaving] = useState(true);
+
+  const handleWaveClick = () => {
+    setIsWaving(false);
+    setTimeout(() => setIsWaving(true), 50);
+  };
+
   return (
     <div className="w-full p-4 sm:w-3/4 sm:p-8">
       <h1
@@ -24,7 +32,22 @@ function Intro() {
           "sm:py-20 sm:text-4xl/relaxed",
         )}
       >
-        {t('homeIntro1')}
+        <span
+          className="cursor-pointer select-none"
+          onClick={handleWaveClick}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              handleWaveClick();
+            }
+          }}
+          aria-label="Wave emoji"
+        >
+          <span className={isWaving ? 'wave-animation' : ''}>👋</span>
+        </span>
+        {' '}{t('homeIntro1').replace('👋 ', '')}
         <br />{t('homeIntro2')}
       </h1>
     </div>
