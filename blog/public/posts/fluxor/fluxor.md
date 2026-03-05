@@ -61,9 +61,9 @@ Back to the beginning of the DEMAND TRIANGLE. From this triangle, we analyze the
 
 [![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-21-1024x576.png)](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-21-1024x576.png)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-10-1024x576.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-10-1024x576.jpg)
+[![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-10-1024x576.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-10-1024x576.webp)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-01-1024x576.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-01-1024x576.jpg)
+[![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-01-1024x576.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-01-1024x576.webp)
 
 ### 🏪 Mobile flash store
 

@@ -2,7 +2,7 @@
 
 Minimalism is the lightweight design of aircraft seats, which based on balancing 3 factors: **_structure_**, **_materials_**, and **_user experience_**.
 
-<video src="./img/AircraftSeats.mp4"></video>
+<video src="/posts/minimalism/img/AircraftSeats.mp4"></video>
 
 ## 🎯 TARGET: Why do aircraft seats need to reduce weight?
 

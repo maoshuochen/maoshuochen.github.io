@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link, Outlet } from "react-router-dom";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { clsx } from "clsx";
 import { useLanguage } from "@/i18n/LanguageContext";
 import LanguageToggle from "@/components/LanguageToggle";
+import ThemeToggle from "@/components/ThemeToggle";
 
 interface NavLinkProps {
   to: string;
@@ -24,13 +25,7 @@ const NavLink = ({ to, children, onClick }: NavLinkProps) => (
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const { t } = useLanguage();
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle("dark", !isDarkMode);
-  };
 
   const links = [
     { to: "/", label: t('projects') },
@@ -64,14 +59,8 @@ export default function Header() {
                 {label}
               </NavLink>
             ))}
+            <ThemeToggle />
             <LanguageToggle />
-            <button onClick={toggleDarkMode} aria-label="Toggle dark mode">
-              {isDarkMode ? (
-                <Sun className="h-6 w-6" />
-              ) : (
-                <Moon className="h-6 w-6" />
-              )}
-            </button>
           </nav>
 
           {/* Mobile menu button */}
@@ -92,7 +81,8 @@ export default function Header() {
                 {label}
               </NavLink>
             ))}
-            <div className="px-2">
+            <div className="flex items-center space-x-2 px-2">
+              <ThemeToggle />
               <LanguageToggle />
             </div>
           </nav>

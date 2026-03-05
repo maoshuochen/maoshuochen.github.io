@@ -13,9 +13,15 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguageState] = useState<Language>('zh');
 
   useEffect(() => {
-    const saved = localStorage.getItem('language') as Language;
+    // 1. 先检查 localStorage
+    const saved = localStorage.getItem('language') as Language | null;
     if (saved && (saved === 'zh' || saved === 'en')) {
       setLanguageState(saved);
+    } else {
+      // 2. 检测系统语言偏好
+      const browserLang = navigator.language.toLowerCase();
+      const initialLang: Language = browserLang.startsWith('zh') ? 'zh' : 'en';
+      setLanguageState(initialLang);
     }
   }, []);
 

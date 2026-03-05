@@ -10,17 +10,17 @@ Contents
 
 ## 🗺️ Layout&Touchpoint
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_03-1024x576.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_03-1024x576.jpg)
+[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_03-1024x576.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_03-1024x576.webp)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_36-1024x576.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_36-1024x576.jpg)
+[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_36-1024x576.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_36-1024x576.webp)
 
 ## 👨‍💻️ Tech Implement
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_38-1024x576.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_38-1024x576.jpg)
+[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_38-1024x576.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_38-1024x576.webp)
 
 ## 🎨 Visual Design
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_40-1024x576.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_40-1024x576.jpg)
+[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_40-1024x576.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_40-1024x576.webp)
 
 Posted in <a href="https://maoshuochen.top/category/interaction-design/" rel="category tag">Interaction Design</a>
 

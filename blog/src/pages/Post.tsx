@@ -11,6 +11,7 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeStringify from "rehype-stringify";
 import { useLanguage } from "@/i18n/LanguageContext";
+import Lightbox from "@/components/Lightbox";
 
 interface TOCItem {
   id: string;
@@ -25,6 +26,10 @@ const TOC = lazy(() => import("@/components/TOC"));
 export default function Post() {
   const { articleId } = useParams<{ articleId: string }>();
   const { language } = useLanguage();
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState('');
+  const [lightboxAlt, setLightboxAlt] = useState('');
+
   const article = useMemo(
     () => articles.find((a) => a.id === articleId),
     [articleId],
@@ -37,6 +42,16 @@ export default function Post() {
     () => parseTOCFromHTML(parsedHTML),
     [parsedHTML],
   );
+
+  const openLightbox = (src: string, alt?: string) => {
+    setLightboxImage(src);
+    setLightboxAlt(alt || '');
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
 
   if (!article) {
     return (
@@ -68,11 +83,12 @@ export default function Post() {
             remarkPlugins={[remarkParse, remarkGfm, remarkRehype]}
             rehypePlugins={[
               rehypeRaw,
+              rehypeImagePaths(articleId),
               rehypeSlug,
               rehypeAutolinkHeadings,
               rehypeStringify,
             ]}
-            components={getMarkdownComponents(articleId)}
+            components={getMarkdownComponents(articleId, openLightbox)}
           >
             {markdown}
           </Markdown>
@@ -85,6 +101,14 @@ export default function Post() {
           <TOC toc={toc} />
         </Suspense>
       </aside>
+
+      {/* 灯箱 */}
+      <Lightbox
+        src={lightboxImage}
+        alt={lightboxAlt}
+        isOpen={lightboxOpen}
+        onClose={closeLightbox}
+      />
     </div>
   );
 }
@@ -132,25 +156,53 @@ function parseTOCFromHTML(html: string): TOCItem[] {
 }
 
 // 生成图片和视频组件
-function getMarkdownComponents(articleId?: string) {
-  const resolvePath = (src?: string) =>
-    src?.startsWith("./img/") ? `/posts/${articleId}/img/${src.slice(6)}` : src;
-
+function getMarkdownComponents(articleId?: string, openLightbox?: (src: string, alt?: string) => void) {
   return {
     img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => {
       const { src, alt, className, ...rest } = props;
+      const resolvedSrc = resolveImagePath(src, articleId);
+      
       return (
         <img
           loading="lazy"
-          src={resolvePath(src)}
+          src={resolvedSrc}
           alt={alt}
           className={clsx(
             className,
-            "h-auto w-full rounded-lg border border-zinc-200",
+            "h-auto w-full cursor-zoom-in rounded-lg border border-zinc-200",
+            "transition-transform hover:scale-[1.02]",
           )}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            resolvedSrc && openLightbox?.(resolvedSrc, alt);
+          }}
           {...rest}
         />
       );
+    },
+    a: (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+      const { href, children, ...rest } = props;
+      // 检测是否是图片链接（包含 img 标签的链接）
+      const hasImageChild = React.isValidElement(children) && 
+        (children as React.ReactElement).type === 'img';
+      
+      if (hasImageChild) {
+        return (
+          <a
+            {...rest}
+            href={href}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
+            style={{ display: 'inline-block' }}
+          >
+            {children}
+          </a>
+        );
+      }
+      return <a href={href} {...rest}>{children}</a>;
     },
     video: (props: React.VideoHTMLAttributes<HTMLVideoElement>) => {
       const { src, className, ...rest } = props;
@@ -159,7 +211,7 @@ function getMarkdownComponents(articleId?: string) {
           controls
           autoPlay
           muted
-          src={resolvePath(src as string)}
+          src={src}
           className={clsx(
             className,
             "my-4 w-full rounded-lg border border-zinc-200",
@@ -169,4 +221,47 @@ function getMarkdownComponents(articleId?: string) {
       );
     },
   };
+}
+
+// rehype 插件：转换图片和视频路径
+function rehypeImagePaths(articleId?: string) {
+  return (tree: any) => {
+    if (!tree || !tree.children) return;
+    
+    const visitNode = (node: any) => {
+      if (!node) return;
+      
+      // 处理图片
+      if (node.tagName === 'img' && node.properties?.src) {
+        node.properties.src = resolveImagePath(node.properties.src, articleId);
+      }
+      // 处理视频
+      if (node.tagName === 'video' && node.properties?.src) {
+        if (node.properties.src.startsWith('./img/')) {
+          node.properties.src = `/posts/${articleId}/img/${node.properties.src.slice(6)}`;
+        }
+      }
+      
+      if (node.children && Array.isArray(node.children)) {
+        node.children.forEach(visitNode);
+      }
+    };
+    
+    tree.children.forEach(visitNode);
+  };
+}
+
+// 解析图片路径
+function resolveImagePath(src?: string, articleId?: string) {
+  if (!src) return src;
+  if (src.startsWith("./img/")) {
+    const imgPath = `/posts/${articleId}/img/${src.slice(6)}`;
+    // 如果已经是 .webp 格式，直接使用
+    if (src.endsWith('.webp')) {
+      return imgPath;
+    }
+    // 否则使用 .webp 格式
+    return `${imgPath}.webp`;
+  }
+  return src;
 }

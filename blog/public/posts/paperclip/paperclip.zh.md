@@ -2,7 +2,7 @@
 
 PaperClip 是一款面向**学术研究者**的_**文献知识管理工具**_，帮助他们从阅读和笔记中挖掘有价值的知识，辅助思考和分析，支持选题等研究过程。其心智模型是齐特尔卡斯特卡片盒笔记法，知识图谱技术为其功能提供支持。
 
-<video src="./img/paperclip.mp4"></video>
+<video src="/posts/paperclip/img/paperclip.mp4"></video>
 
 ## 💻 原型演示
 

@@ -2,7 +2,7 @@
 
 Minimalism 是基于平衡**结构**、**材料**和**用户体验**三个因素的飞机座椅轻量化设计。
 
-<video src="./img/AircraftSeats.mp4"></video>
+<video src="/posts/minimalism/img/AircraftSeats.mp4"></video>
 
 ## 🎯 目标：为什么飞机座椅需要减重？
 

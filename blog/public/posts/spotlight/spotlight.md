@@ -36,37 +36,37 @@ In response to such a problem, we have designed a car-recognition interactive sy
 
 We experience this system from the perspective of a future office worker John. When John needs to travel, he only needs to book a car in the APP, enter the starting point first, and the system will assign the nearest reasonable parking point. Enter the endpoint again, and after confirming, the system will assign an on-street intelligent bus, pick John at the scheduled departure point at the scheduled time, and prompt John to identify the color of the bus.
 
-<video src="./img/SpotlightStoryboard-1_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-1_x264.mp4"></video>
 
 ### 🔍 Find the Bus
 
 The bus will arrive at the boarding point in advance to wait for John, and the lights slowly breathe as a stop. After John arrives at the pick-up location, there may be multiple buses at the same location. At this point, John can lift the phone and use the app’s AR function to assist identification. At this time, the mobile phone interface becomes dark, and when John’s reserved bus appears on the interface, AR will highlight the bus to assist John’s identification.
 
-<video src="./img/SpotlightStoryboard-2_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-2_x264.mp4"></video>
 
 ### ✅ Make Sure
 
 When John finds the bus he has booked, AR will also prompt the fastest boarding route. As John approached the bus, the breathing rate of the lights accelerated to remind John.
 
-<video src="./img/SpotlightStoryboard-3_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-3_x264.mp4"></video>
 
 ### 👆 Get on the Bus
 
 When John reached the door, the door opened automatically for him. When John stepped on the pedal, the green light around the B-pillar door frame and the pedal sounded the correct tone. If someone follows John into the wrong car, a red light will light up around the B pillar door frame, and an error sound will sound to prevent the user from getting in the wrong car. When the vehicle exits, the overhead lights will go out. At low speeds, buses will also play a soft, natural sound continuously to remind the vehicle that it is driving. We chose here the sound of the waves.
 
-<video src="./img/SpotlightStoryboard-4_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-4_x264.mp4"></video>
 
 ### ❗ Warn Pedestrians
 
 When a passerby blocks the driving route, the overhead light will flash red, and the closer to the passerby, the faster the strobe light. The sound of the driving which like wave sound, also became intense to warn passersby.
 
-<video src="./img/SpotlightStoryboard-5_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-5_x264.mp4"></video>
 
 ### 👇 Get off the Bus
 
 John’s destination has arrived. When John got out of the car, a green light would also light up around the door frame and the correct alert sounded. If someone followed John but got in the wrong place, a red light would turn on around the door frame, and an error sound would sound to prevent her from getting in the wrong car.
 
-<video src="./img/SpotlightStoryboard-6_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-6_x264.mp4"></video>
 
 ## 💡 INTERACTION: Solutions to the Identification Problem
 
