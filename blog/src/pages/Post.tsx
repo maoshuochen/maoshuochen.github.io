@@ -1,15 +1,11 @@
-import React, { Suspense, lazy, useMemo, useState, useEffect } from "react";
+import React, { Suspense, lazy, useMemo, useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import clsx from "clsx";
 import { articles } from "@/data";
-import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkGfm from "remark-gfm";
-import remarkRehype from "remark-rehype";
 import rehypeRaw from "rehype-raw";
-import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypeStringify from "rehype-stringify";
 import { useLanguage } from "@/i18n/LanguageContext";
 import Lightbox from "@/components/Lightbox";
 
@@ -19,6 +15,21 @@ interface TOCItem {
   level: number;
 }
 
+interface RehypeNode {
+  tagName?: string;
+  properties?: Record<string, unknown>;
+  children?: RehypeNode[];
+}
+
+interface MdastNode {
+  type?: string;
+  value?: unknown;
+  depth?: number;
+  children?: MdastNode[];
+  data?: {
+    hProperties?: Record<string, unknown>;
+  };
+}
 // 延迟加载 Markdown 和 TOC 组件
 const Markdown = lazy(() => import("react-markdown"));
 const TOC = lazy(() => import("@/components/TOC"));
@@ -29,19 +40,23 @@ export default function Post() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImage, setLightboxImage] = useState('');
   const [lightboxAlt, setLightboxAlt] = useState('');
+  const tocRef = useRef<TOCItem[]>([]);
 
   const article = useMemo(
     () => articles.find((a) => a.id === articleId),
     [articleId],
   );
 
-  const contentUrl = language === 'zh' ? article?.content_url_zh : article?.content_url;
+  const contentUrl =
+    language === "zh" ? article?.content_url_zh : article?.content_url;
   const markdown = useMarkdown(`/posts/${contentUrl || ""}`);
-  const parsedHTML = useMemo(() => processMarkdown(markdown), [markdown]);
-  const toc: TOCItem[] = useMemo(
-    () => parseTOCFromHTML(parsedHTML),
-    [parsedHTML],
-  );
+  const [toc, setToc] = useState<TOCItem[]>([]);
+
+  useEffect(() => {
+    if (!sameToc(toc, tocRef.current)) {
+      setToc(tocRef.current);
+    }
+  }, [markdown, toc]);
 
   const openLightbox = (src: string, alt?: string) => {
     setLightboxImage(src);
@@ -80,13 +95,12 @@ export default function Post() {
       >
         <Suspense fallback={<div>Loading content…</div>}>
           <Markdown
-            remarkPlugins={[remarkParse, remarkGfm, remarkRehype]}
+            remarkPlugins={[remarkParse, remarkGfm, remarkCollectToc(tocRef)]}
             rehypePlugins={[
               rehypeRaw,
               rehypeImagePaths(articleId),
-              rehypeSlug,
+              rehypeStripEventHandlers(),
               rehypeAutolinkHeadings,
-              rehypeStringify,
             ]}
             components={getMarkdownComponents(articleId, openLightbox)}
           >
@@ -128,31 +142,88 @@ function useMarkdown(url?: string) {
   return markdown;
 }
 
-// 处理 Markdown 转换为 HTML
-function processMarkdown(markdown: string) {
-  if (!markdown) return "";
-  return unified()
-    .use(remarkParse)
-    .use(remarkGfm)
-    .use(remarkRehype)
-    .use(rehypeRaw)
-    .use(rehypeSlug)
-    .use(rehypeAutolinkHeadings)
-    .use(rehypeStringify)
-    .processSync(markdown)
-    .toString();
+function remarkCollectToc(tocRef: React.MutableRefObject<TOCItem[]>) {
+  return () => (tree: MdastNode) => {
+    const nextToc: TOCItem[] = [];
+    const slugCounts = new Map<string, number>();
+
+    const visitNode = (node: MdastNode) => {
+      if (node.type === "heading" && node.depth) {
+        if (node.depth >= 2 && node.depth <= 6) {
+          const text = extractText(node).trim();
+          if (text) {
+            const id = uniqueSlug(text, slugCounts);
+            node.data = node.data ?? {};
+            node.data.hProperties = node.data.hProperties ?? {};
+            node.data.hProperties.id = id;
+            nextToc.push({
+              id,
+              text,
+              level: node.depth,
+            });
+          }
+        }
+      }
+      if (node.children) {
+        node.children.forEach(visitNode);
+      }
+    };
+
+    visitNode(tree);
+    tocRef.current = nextToc;
+  };
 }
 
-// 从 HTML 中提取 TOC
-function parseTOCFromHTML(html: string): TOCItem[] {
-  const doc = new DOMParser().parseFromString(html, "text/html");
-  const headings = Array.from(doc.querySelectorAll("h2, h3, h4, h5, h6"));
+function extractText(node: MdastNode): string {
+  if (node.type === "text" || node.type === "inlineCode") {
+    return typeof node.value === "string" ? node.value : String(node.value ?? "");
+  }
+  if (!node.children) return "";
+  return node.children.map(extractText).join("");
+}
 
-  return headings.map((heading) => ({
-    id: heading.id,
-    text: heading.textContent || "",
-    level: parseInt(heading.tagName[1], 10),
-  }));
+function uniqueSlug(text: string, slugCounts: Map<string, number>) {
+  const base = slugifyHeading(text) || "section";
+  const count = slugCounts.get(base) ?? 0;
+  slugCounts.set(base, count + 1);
+  return count === 0 ? base : `${base}-${count + 1}`;
+}
+
+function slugifyHeading(text: string) {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\u00c0-\u024f\u4e00-\u9fff -]/g, "")
+    .replace(/\s+/g, "-");
+}
+
+function sameToc(a: TOCItem[], b: TOCItem[]) {
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i += 1) {
+    if (a[i].id !== b[i].id || a[i].text !== b[i].text || a[i].level !== b[i].level) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function rehypeStripEventHandlers() {
+  return (tree: RehypeNode) => {
+    const visitNode = (node: RehypeNode) => {
+      if (!node) return;
+      if (node.properties) {
+        for (const key of Object.keys(node.properties)) {
+          if (key.startsWith("on")) {
+            delete node.properties[key];
+          }
+        }
+      }
+      if (node.children) {
+        node.children.forEach(visitNode);
+      }
+    };
+    visitNode(tree);
+  };
 }
 
 // 生成图片和视频组件
@@ -175,7 +246,9 @@ function getMarkdownComponents(articleId?: string, openLightbox?: (src: string, 
           onClick={(e) => {
             e.preventDefault();
             e.stopPropagation();
-            resolvedSrc && openLightbox?.(resolvedSrc, alt);
+            if (resolvedSrc) {
+              openLightbox?.(resolvedSrc, alt);
+            }
           }}
           {...rest}
         />
@@ -220,23 +293,34 @@ function getMarkdownComponents(articleId?: string, openLightbox?: (src: string, 
         />
       );
     },
+    iframe: (props: React.IframeHTMLAttributes<HTMLIFrameElement>) => {
+      const { onLoad, className, ...rest } = props;
+      const safeOnLoad = typeof onLoad === "function" ? onLoad : undefined;
+      return (
+        <iframe
+          {...rest}
+          onLoad={safeOnLoad}
+          className={clsx(className, "my-4 w-full rounded-lg border border-zinc-200")}
+        />
+      );
+    },
   };
 }
 
 // rehype 插件：转换图片和视频路径
 function rehypeImagePaths(articleId?: string) {
-  return (tree: any) => {
+  return (tree: RehypeNode) => {
     if (!tree || !tree.children) return;
     
-    const visitNode = (node: any) => {
+    const visitNode = (node: RehypeNode) => {
       if (!node) return;
       
       // 处理图片
-      if (node.tagName === 'img' && node.properties?.src) {
+      if (node.tagName === 'img' && typeof node.properties?.src === "string") {
         node.properties.src = resolveImagePath(node.properties.src, articleId);
       }
       // 处理视频
-      if (node.tagName === 'video' && node.properties?.src) {
+      if (node.tagName === 'video' && typeof node.properties?.src === "string") {
         if (node.properties.src.startsWith('./img/')) {
           node.properties.src = `/posts/${articleId}/img/${node.properties.src.slice(6)}`;
         }

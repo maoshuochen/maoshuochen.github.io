@@ -12,6 +12,14 @@ interface TOCProps {
 }
 
 const TOC: React.FC<TOCProps> = ({ toc }) => {
+  const levelPaddingMap: Record<number, string> = {
+    2: "pl-0",
+    3: "pl-4",
+    4: "pl-8",
+    5: "pl-12",
+    6: "pl-16",
+  };
+
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     const target = document.getElementById(id);
@@ -32,7 +40,7 @@ const TOC: React.FC<TOCProps> = ({ toc }) => {
           <li
             key={id}
             className={clsx(
-              `px-${(level - 2) * 8}`,
+              levelPaddingMap[level] ?? "pl-0",
               "opacity-40 transition hover:opacity-100",
             )}
           >

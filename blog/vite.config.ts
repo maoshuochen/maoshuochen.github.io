@@ -18,7 +18,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
-          markdown: ['react-markdown', 'remark-parse', 'remark-gfm', 'remark-rehype', 'rehype-raw', 'rehype-slug', 'rehype-autolink-headings', 'rehype-stringify'],
+          markdown: ['react-markdown', 'remark-parse', 'remark-gfm', 'rehype-raw', 'rehype-autolink-headings'],
           ui: ['@radix-ui/react-icons', '@radix-ui/react-navigation-menu', '@radix-ui/react-slot', 'lucide-react', 'class-variance-authority'],
         },
       },
