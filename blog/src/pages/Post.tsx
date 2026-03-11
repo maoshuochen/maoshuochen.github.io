@@ -158,7 +158,8 @@ function useMarkdown(url?: string, prefetchUrl?: string) {
         markdownCache.set(url, text);
         setMarkdown(text);
       })
-      .catch(() => {
+      .catch((err) => {
+        if (err?.name === "AbortError") return;
         if (!markdownCache.has(url)) {
           setMarkdown("Error loading markdown");
         }
@@ -181,6 +182,9 @@ function useMarkdown(url?: string, prefetchUrl?: string) {
       .then((res) => res.text())
       .then((text) => {
         markdownCache.set(prefetchUrl, text);
+      })
+      .catch((err) => {
+        if (err?.name === "AbortError") return;
       })
       .finally(() => {
         inFlight.delete(prefetchUrl);
