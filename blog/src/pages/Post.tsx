@@ -34,6 +34,9 @@ interface MdastNode {
 const Markdown = lazy(() => import("react-markdown"));
 const TOC = lazy(() => import("@/components/TOC"));
 
+const markdownCache = new Map<string, string>();
+const inFlight = new Map<string, AbortController>();
+
 export default function Post() {
   const { articleId } = useParams<{ articleId: string }>();
   const { language } = useLanguage();
@@ -49,7 +52,12 @@ export default function Post() {
 
   const contentUrl =
     language === "zh" ? article?.content_url_zh : article?.content_url;
-  const markdown = useMarkdown(`/posts/${contentUrl || ""}`);
+  const otherUrl =
+    language === "zh" ? article?.content_url : article?.content_url_zh;
+  const markdown = useMarkdown(
+    contentUrl ? `/posts/${contentUrl}` : undefined,
+    otherUrl ? `/posts/${otherUrl}` : undefined,
+  );
   const [toc, setToc] = useState<TOCItem[]>([]);
 
   useEffect(() => {
@@ -129,16 +137,60 @@ export default function Post() {
 
 // --- Hooks & Helpers ---
 
-// 获取 Markdown 内容
-function useMarkdown(url?: string) {
-  const [markdown, setMarkdown] = useState("Loading...");
+// 获取 Markdown 内容（带缓存与预取）
+function useMarkdown(url?: string, prefetchUrl?: string) {
+  const [markdown, setMarkdown] = useState(() =>
+    url ? markdownCache.get(url) ?? "" : "",
+  );
   useEffect(() => {
     if (!url) return;
-    fetch(url)
+    const cached = markdownCache.get(url);
+    if (cached) {
+      setMarkdown(cached);
+      return;
+    }
+    if (inFlight.has(url)) return;
+    const controller = new AbortController();
+    inFlight.set(url, controller);
+    fetch(url, { signal: controller.signal })
       .then((res) => res.text())
-      .then(setMarkdown)
-      .catch(() => setMarkdown("Error loading markdown"));
+      .then((text) => {
+        markdownCache.set(url, text);
+        setMarkdown(text);
+      })
+      .catch(() => {
+        if (!markdownCache.has(url)) {
+          setMarkdown("Error loading markdown");
+        }
+      })
+      .finally(() => {
+        inFlight.delete(url);
+      });
+    return () => {
+      controller.abort();
+      inFlight.delete(url);
+    };
   }, [url]);
+
+  useEffect(() => {
+    if (!prefetchUrl) return;
+    if (markdownCache.has(prefetchUrl) || inFlight.has(prefetchUrl)) return;
+    const controller = new AbortController();
+    inFlight.set(prefetchUrl, controller);
+    fetch(prefetchUrl, { signal: controller.signal })
+      .then((res) => res.text())
+      .then((text) => {
+        markdownCache.set(prefetchUrl, text);
+      })
+      .finally(() => {
+        inFlight.delete(prefetchUrl);
+      });
+    return () => {
+      controller.abort();
+      inFlight.delete(prefetchUrl);
+    };
+  }, [prefetchUrl]);
+
   return markdown;
 }
 
