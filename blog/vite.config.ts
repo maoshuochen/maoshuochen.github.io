@@ -13,16 +13,6 @@ export default defineConfig({
   },
   base: "/",
   build: {
-    // 代码分割优化
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          markdown: ['react-markdown', 'remark-parse', 'remark-gfm', 'rehype-raw', 'rehype-autolink-headings'],
-          ui: ['@radix-ui/react-icons', '@radix-ui/react-navigation-menu', '@radix-ui/react-slot', 'lucide-react', 'class-variance-authority'],
-        },
-      },
-    },
     // 生成 sourcemap 用于分析
     sourcemap: false,
     // 压缩选项
