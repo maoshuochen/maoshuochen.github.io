@@ -282,8 +282,8 @@ function getMarkdownComponents(articleId?: string, openLightbox?: (src: string, 
       return (
         <video
           controls
-          autoPlay
-          muted
+          playsInline
+          preload="metadata"
           src={src}
           className={clsx(
             className,
