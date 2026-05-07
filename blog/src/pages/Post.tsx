@@ -7,7 +7,9 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { TranslationKey } from "@/i18n/translations";
 import Lightbox from "@/components/Lightbox";
+import SEO from "@/components/SEO";
 
 interface TOCItem {
   id: string;
@@ -39,7 +41,7 @@ const inFlight = new Map<string, AbortController>();
 
 export default function Post() {
   const { articleId } = useParams<{ articleId: string }>();
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImage, setLightboxImage] = useState('');
   const [lightboxAlt, setLightboxAlt] = useState('');
@@ -78,9 +80,20 @@ export default function Post() {
 
   if (!article) {
     return (
-      <div className="p-10 text-center text-red-500">Article not found</div>
+      <>
+        <SEO
+          title="Article not found"
+          description="The requested article could not be found."
+          path={`/post/${articleId ?? ""}`}
+          noindex
+        />
+        <div className="p-10 text-center text-red-500">Article not found</div>
+      </>
     );
   }
+
+  const articleTitle = t(article.titleKey as TranslationKey);
+  const articleDescription = t(article.subtitleKey as TranslationKey);
 
   return (
     <div
@@ -89,6 +102,13 @@ export default function Post() {
         "px-8 pb-10 pt-10 sm:px-20 sm:pt-20 lg:px-40",
       )}
     >
+      <SEO
+        title={articleTitle}
+        description={articleDescription}
+        path={`/post/${article.id}`}
+        image={article.image_url}
+        type="article"
+      />
       {/* Markdown 主体 */}
       <div
         className={clsx(

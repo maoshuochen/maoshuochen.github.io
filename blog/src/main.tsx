@@ -5,6 +5,12 @@ import { LanguageProvider } from "./i18n/LanguageContext.tsx";
 import { ThemeProvider } from "./i18n/ThemeContext.tsx";
 import "./index.css";
 
+const redirectedPath = sessionStorage.getItem("spa_redirect");
+if (redirectedPath) {
+  sessionStorage.removeItem("spa_redirect");
+  history.replaceState(null, "", redirectedPath);
+}
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider>

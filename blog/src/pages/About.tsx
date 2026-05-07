@@ -1,11 +1,17 @@
 import clsx from "clsx";
 import { useLanguage } from "@/i18n/LanguageContext";
+import SEO from "@/components/SEO";
 
 export default function About() {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
+  const description =
+    language === "zh"
+      ? "陈茂烁，用户型产品经理，专注产品体验、音视频协作、国际化能力与 AI Agent 探索。"
+      : "Maoshuo Chen is a user-focused product manager working across product experience, video collaboration, internationalization, and AI Agent exploration.";
 
   return (
     <div className="flex h-full w-full flex-col items-center justify-center px-4 pt-4 sm:px-0">
+      <SEO title={t("aboutTitle")} description={description} path="/about" type="profile" />
       <div className="w-full p-4 sm:w-3/4 sm:p-8">
         {/* 基本信息 */}
         <div className="mb-8">

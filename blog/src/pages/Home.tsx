@@ -4,10 +4,18 @@ import clsx from "clsx";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { TranslationKey } from "@/i18n/translations";
 import { useState } from "react";
+import SEO from "@/components/SEO";
 
 export default function Home() {
+  const { language } = useLanguage();
+  const description =
+    language === "zh"
+      ? "陈茂烁的产品设计作品集，关注用户体验、交互设计、产品管理与 AI 产品思考。"
+      : "Maoshuo Chen's product design portfolio, focused on user experience, interaction design, product management, and AI product thinking.";
+
   return (
     <div className="flex h-full w-full flex-col items-center justify-center px-4 pt-4 sm:px-0">
+      <SEO title="Maoshuo Chen" description={description} />
       <Intro />
       <ArticleGrid />
     </div>
