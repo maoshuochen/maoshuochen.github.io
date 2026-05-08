@@ -10,6 +10,16 @@ Around 7 million people live in central Shanghai, while about 16 million live in
 
 ![](./img/image-1575701513586-768x432-1.webp)
 
+The daily pain points were then translated into four visual scenarios: tedious commuting, repetitive food choices, limited entertainment, and a lack of social activity. These images helped clarify that the problem was not only transportation time, but the thinness of everyday services around suburban life.
+
+![](./img/image-1575701912297-768x432-1.webp)
+
+![](./img/image-1575701938840-768x432-1.webp)
+
+![](./img/image-1575701965689-768x432-1.webp)
+
+![](./img/image-1575701997677-768x432-1.webp)
+
 ## Research: From Basic Demand to Advanced Demand
 
 The project began by mapping residents' needs into a demand triangle. Basic needs include food, safety, healthcare, and employment. Advanced needs include entertainment, social connection, learning, creation, and self-actualization.

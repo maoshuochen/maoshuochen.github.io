@@ -6,6 +6,8 @@ In 2030, autonomous driving may sit between Level 3 and Level 4. The vehicle can
 
 MOSEY explores a warmer human-vehicle relationship for this in-between moment. Instead of treating the car as either a passive tool or a fully independent machine, the project imagines the vehicle as a partner that communicates its state, intention, and limits in a way the driver can gradually understand.
 
+![](./export12_0356.webp)
+
 <video src="/posts/mosey/Mosey_x264.mp4" controls></video>
 
 ## Research: The L3 Handover Problem
