@@ -12,8 +12,6 @@
 
 传统头盔常常在保护性能、重量和通风之间做取舍。这个概念尝试用生成式结构重新分配材料：在高风险区域加强保护，在低风险区域减少冗余材料，并通过点阵结构为散热留出空间。
 
-![](./Helmet1028.87-2000x1125-1.webp)
-
 <video src="/posts/helmet-generative/GenerativeHelmet.mp4" controls></video>
 
 ## 总结
