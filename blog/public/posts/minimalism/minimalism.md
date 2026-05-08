@@ -37,6 +37,8 @@ _Reducing seat weight can affect comfort, and poor comfort may directly influenc
 
 From ergonomics and user needs, we studied aircraft seat dimensions and conducted focus group interviews with passengers. The research helped define which areas of the seat should remain supportive, which areas could be reshaped, and where material changes might affect the perception of comfort.
 
+The focus group showed that passengers cared more about perceived space than being tightly wrapped by the seat. They expected an adjustable headrest or neck rest, enough headroom, moderate lumbar support, and a seat depth that could support more postures. These findings became constraints for the lightweight design: the seat could become lighter, but it still needed to feel open, clean, and supportive.
+
 ![](./img/PortfolioSingleRGB_Page_13-2000x1414-1.webp)
 
 Aircraft seat ergonomics data and focus group conclusions.
@@ -83,6 +85,14 @@ The armrest shape subtly separates the personal space of passengers on both side
 The cushion and backrest use a composite foam structure with density distributed according to sitting pressure. Inspired by sneaker midsoles, wavy sections help disperse pressure and reduce material use where full density is not needed.
 
 ![](./img/PortfolioSingleRGB_Page_15-2000x1414-1.webp)
+
+### 🎨 CMF
+
+The CMF direction was developed around the idea of a "Traveling SPA." In a survey of 300 people, the strongest expectations for aircraft seats were **clean and tidy** and **bright and spacious**, while the most unacceptable feelings were dirtiness and crowding.
+
+Based on this, the proposal uses low-saturation, high-lightness colors, woven textures, partitioned stitching, and metal wire-drawing details. CORDURA LITEPLUS outdoor fabric was considered for its tear resistance, durability, water resistance, and strength-to-weight ratio.
+
+![](./img/PortfolioSingleRGB_Page_17-CMF.jpg)
 
 ## 💡 Design Outcome
 

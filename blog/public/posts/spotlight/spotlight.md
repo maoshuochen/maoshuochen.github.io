@@ -70,6 +70,8 @@ When John reaches his destination and gets off, green lights and a confirmation 
 
 ## 💡 Interaction: Solving the Identification Problem
 
+Spotlight avoids asking passengers to read detailed information in a crowded pickup environment. Instead, it divides the identification task across several channels: AR helps the user locate the assigned vehicle, exterior light gives long-distance recognition, and sound provides immediate feedback during boarding, alighting, and pedestrian warning.
+
 ### ✨ Breathing Lights
 
 Different breathing light animations represent different vehicle states, such as waiting, being approached, or warning. When the assigned passenger gets closer, the breathing rhythm accelerates, making the vehicle feel responsive without requiring the passenger to read text.
@@ -93,7 +95,7 @@ We chose light instead of screens or text-heavy graphics for three reasons.
 
 The selected colors need to be distinguishable and familiar. We began with the rainbow colors: red, orange, yellow, green, blue, indigo, and violet.
 
-Three factors affect how users perceive light color: environmental color, light brightness, and color shift in the hardware. Based on this, orange was removed because it may be confused with yellow, and blue was removed because it may be confused with indigo.
+Three factors affect how users perceive light color: environmental color, light brightness, and color shift in the hardware. Based on this, orange was removed because it may be confused with yellow, and blue was removed because it may be confused with indigo. When many buses appear in the same place and five single colors are not enough, the system can also combine two colors to expand the recognition set.
 
 ![](./img/Asset-2.webp)
 
