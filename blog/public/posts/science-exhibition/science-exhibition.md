@@ -1,27 +1,27 @@
 # Science Popularization Exhibition Design
 
-Posted on [2021-01-192022-03-07](https://maoshuochen.top/science-popularization-exhibition-design/) by [Maoshuo Chen](https://maoshuochen.top/author/maoshuochen/)
+This project explores how an exhibition can make scientific knowledge easier to approach through spatial storytelling, interactive touchpoints, and a clear visual system. The design translates abstract information into a visitor journey where people can move between observation, participation, and reflection.
 
-Contents
+## Layout and Touchpoints
 
-- [1 🗺️ Layout&Touchpoint](about:blank#_LayoutTouchpoint)
-- [2 👨‍💻️ Tech Implement](about:blank#_Tech_Implement)
-- [3 🎨 Visual Design](about:blank#_Visual_Design)
+The exhibition layout organizes content into a sequence of themed zones. Each touchpoint is designed to support a specific learning action: seeing a phenomenon, triggering an interaction, comparing data, or connecting the scientific principle to everyday life.
 
-## 🗺️ Layout&Touchpoint
+[![](./img/Studio1_Page_03-1536x864.jpg)](./img/Studio1_Page_03-1536x864.jpg)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_03-1024x576.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_03-1024x576.webp)
+[![](./img/Studio1_Page_36-2048x1152.jpg)](./img/Studio1_Page_36-2048x1152.jpg)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_36-1024x576.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_36-1024x576.webp)
+## Technical Implementation
 
-## 👨‍💻️ Tech Implement
+The technical plan focuses on making interactions legible and reliable inside the exhibition environment. Hardware, screen content, sensing logic, and spatial placement are considered together so that visitors can understand what to do without additional explanation.
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_38-1024x576.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_38-1024x576.webp)
+[![](./img/Studio1_Page_38-2048x1152.jpg)](./img/Studio1_Page_38-2048x1152.jpg)
 
-## 🎨 Visual Design
+## Visual Design
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_40-1024x576.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2021/01/Studio1_Page_40-1024x576.webp)
+The visual system uses consistent color, typography, iconography, and panel composition to connect different parts of the exhibition. The goal is to keep the science content clear while giving the whole space a recognizable identity.
 
-Posted in <a href="https://maoshuochen.top/category/interaction-design/" rel="category tag">Interaction Design</a>
+[![](./img/Studio1_Page_40-2048x1152.jpg)](./img/Studio1_Page_40-2048x1152.jpg)
 
-本文转自 [https://maoshuochen.top/science-popularization-exhibition-design/](https://maoshuochen.top/science-popularization-exhibition-design/)，如有侵权，请联系删除。
+## Summary
+
+The final proposal combines spatial planning, interaction design, and graphic communication into a complete science exhibition experience. It is designed for visitors who may not have a technical background, but who can learn through movement, curiosity, and direct engagement.

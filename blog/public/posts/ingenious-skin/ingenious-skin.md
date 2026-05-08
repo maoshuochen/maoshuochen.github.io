@@ -1,32 +1,31 @@
-# Ingenious Skin – Natural Interaction Design in Smart Cockpit base on Smart Textile
+# Ingenious Skin – Natural Interaction Design in Smart Cockpit Based on Smart Textile
 
-Posted on [2022-04-182022-04-18](https://maoshuochen.top/ingenious-skin-natural-interaction-design-in-smart-cockpit-base-on-smart-textile/) by [Maoshuo Chen](https://maoshuochen.top/author/maoshuochen/)
+Ingenious Skin explores how smart textiles can make cockpit interaction feel more tactile, cultural, and intuitive. Instead of adding another screen or button to the vehicle interior, the project turns an embroidered door panel into an interactive surface. By swiping along the conductive embroidery pattern, the user can adjust the audio volume through a gesture that feels closer to touching fabric than operating a device.
 
-Ingenious skin may invite the audience to experience a **_natural gesture interaction_** in the vehicle by swiping the embroidery pattern located on the cockpit door as a volume slider. We embroidered the conductive threads and normal yarns on Alcantara, and the unique texture and patterns were inspired by traditional Chinese embroidery and painting.
+## Concept
 
-Contents
+The project combines conductive thread, traditional yarn, and Alcantara to build a textile interface that is both functional and decorative. The pattern language is inspired by Chinese embroidery and painting, allowing the interaction layer to become part of the visual identity of the cockpit rather than a hidden technical component.
 
-- [1 📁 Design](about:blank#_Design)
-- [2 ✨ Exhibition](about:blank#_Exhibition)
+This approach gives the smart cockpit a softer interaction vocabulary. The door trim is no longer only a material surface; it becomes a subtle input area that can sense touch, invite gestures, and connect digital control with craft.
 
-## 📁 Design
+## Design
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/04/1650211836-Panel1-scaled.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2022/04/1650211836-Panel1-scaled.webp)
+[![](./img/1650211836-Panel1-scaled.jpg)](./img/1650211836-Panel1-scaled.jpg)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/04/1650211847-Panel2-scaled.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2022/04/1650211847-Panel2-scaled.webp)
+[![](./img/1650211847-Panel2-scaled.jpg)](./img/1650211847-Panel2-scaled.jpg)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/04/1650211861-Panel3-scaled.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2022/04/1650211861-Panel3-scaled.webp)
+[![](./img/1650211861-Panel3-scaled.jpg)](./img/1650211861-Panel3-scaled.jpg)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/04/1650211872-Panel4-scaled.webp)](https://cdn.maoshuochen.top/wp-content/uploads/2022/04/1650211872-Panel4-scaled.webp)
+[![](./img/1650211872-Panel4-scaled.jpg)](./img/1650211872-Panel4-scaled.jpg)
 
-## ✨ Exhibition
+## Exhibition
 
-We make a exhibition on the DDW 2021 as part of the project: Embroidering the Next Mobility.
+The work was exhibited at Dutch Design Week 2021 as part of the project "Embroidering the Next Mobility."
 
 [https://ddw.nl/en/programme/5738/embroidering-the-next-mobility](https://ddw.nl/en/programme/5738/embroidering-the-next-mobility)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2022/04/1650212133-DDW2021.png)](https://cdn.maoshuochen.top/wp-content/uploads/2022/04/1650212133-DDW2021.png)
+[![](./img/1650212133-DDW2021.png)](./img/1650212133-DDW2021.png)
 
-Posted in <a href="https://maoshuochen.top/category/interaction-design/" rel="category tag">Interaction Design</a>
+## Summary
 
-本文转自 [https://maoshuochen.top/ingenious-skin-natural-interaction-design-in-smart-cockpit-base-on-smart-textile/](https://maoshuochen.top/ingenious-skin-natural-interaction-design-in-smart-cockpit-base-on-smart-textile/)，如有侵权，请联系删除。
+Ingenious Skin reframes vehicle interaction as an extension of material experience. It suggests that future cockpits do not have to become more screen-heavy; they can become more sensitive, more crafted, and more natural to touch.

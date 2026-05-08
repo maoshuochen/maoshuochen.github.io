@@ -1,61 +1,55 @@
-# Minimalism – Aircraft Seats Lightweight Design
+# Minimalism – Aircraft Seat Lightweight Design
 
-Minimalism is the lightweight design of aircraft seats, which based on balancing 3 factors: **_structure_**, **_materials_**, and **_user experience_**.
+Minimalism is a lightweight aircraft seat concept that balances three factors: **structure**, **materials**, and **user experience**. The project explores how to reduce seat weight without treating comfort, safety, and manufacturability as afterthoughts.
 
 <video src="/posts/minimalism/img/AircraftSeats.mp4"></video>
 
-## 🎯 TARGET: Why do aircraft seats need to reduce weight?
+## 🎯 Target: Why Aircraft Seats Need to Lose Weight
 
----
-
-Taking ✈️ the Boeing-747 as an example, there are 💺 272 seats in economy class, with an estimated flight mileage of 65,437,20 km per year and fuel consumption of ⛽10.77 kg per km.
+Taking the Boeing 747-400 as an example, an economy cabin has 272 seats. Based on an estimated annual flight distance of 6,543,720 km and fuel consumption of 10.77 kg per km, even a small reduction in the weight of each seat can create a meaningful operational impact.
 
 ![](./img/PortfolioSingleRGB_Page_11-2000x1414-1.webp)
 
-If each economy class seat on a 747-400 is reduced by 1kg,  
+If each economy class seat on a 747-400 is reduced by 1 kg:
+
 ⛽ **139 tons of fuel** can be saved in a year.  
-💵 **88,944$** will be saved for airlines.  
-🏭 **444 tons of carbon emissions** will be reduced.  
-💺 **8 more seats** can be put on a 747-400.  
-if we save those weights, which will bring more extra benefits.
+💵 **$88,944** can be saved for the airline.  
+🏭 **444 tons of carbon emissions** can be reduced.  
+💺 **8 additional seats** can be added to a 747-400.
 
-Whether from an environmental standpoint or from the business interests of airlines, it is very important to reduce the weight of aircraft seats.
+For airlines, seat weight is connected to fuel cost, capacity, and carbon emissions. For passengers, however, weight reduction cannot come at the expense of comfort or safety. This project therefore treats lightweight design as a balance between engineering and experience.
 
-## 📚 RESEARCH: What limits the weight reduction of the aircraft seat
-
----
+## 📚 Research: What Limits Aircraft Seat Weight Reduction
 
 ### 🔧 Structure
 
-_The structure of the aircraft seat needs to be able to withstand extreme acceleration from all directions._
+_Aircraft seat structures must withstand extreme acceleration and forces from multiple directions._
 
-For the structure of the aircraft seat, we managed to get the weight data of the aircraft seat (original model) and the Chinese national safety standard for aircraft seats (SAE AS 8049B). With the help of civil and mechanical engineering students, the following graphs show the results of the analysis of the data (weight and forces). The colored part shows that we can reduce the weight of the airplane seat.
+For structural research, we collected the weight data of the original aircraft seat model and studied the Chinese national safety standard for aircraft seats, SAE AS 8049B. With support from civil and mechanical engineering students, we analyzed weight distribution and force paths to identify which parts of the structure had potential for weight reduction.
 
 ![](./img/PortfolioSingleRGB_Page_12-2000x1414-1.webp)
 
-Aircraft seats (Original Model) weight & force analysis diagram
+Aircraft seat weight and force analysis diagram.
 
 ### 👨 User Experience
 
-_The weight reduction of the seat will affect the user experience, and the low user experience will lead to the loss of economy class customers._
+_Reducing seat weight can affect comfort, and poor comfort may directly influence the passenger experience in economy class._
 
-From the perspectives of ergonomics and user demands, we conducted ergonomic scale research on airplane seats and Focus Group for airplane passengers. Here are some of the results from the user experience study.
+From ergonomics and user needs, we studied aircraft seat dimensions and conducted focus group interviews with passengers. The research helped define which areas of the seat should remain supportive, which areas could be reshaped, and where material changes might affect the perception of comfort.
 
 ![](./img/PortfolioSingleRGB_Page_13-2000x1414-1.webp)
 
-Aircraft seats ergonomics data & Focus Group Conclusions
+Aircraft seat ergonomics data and focus group conclusions.
 
 ### 🧱 Materials
 
-_The material of the seat should have very good fire and flame resistance and can withstand high strength._
+_Seat materials must meet strict requirements for strength, durability, and fire resistance._
 
-In terms of materials, it is also regulated by the Chinese national safety standards for aircraft seats (SAE AS 8049B). On the basis of standards, to find new materials from companies such as DuPont from the perspective of lightweight. We also considered the possibility of metal frames with new materials.
+Material selection was also constrained by the safety standard. Based on these requirements, we explored lightweight materials from companies such as DuPont and considered how new materials could work together with a metal frame. The goal was not to replace every structural part, but to use materials more precisely where they could reduce weight without weakening the seat.
 
 ![](./img/material-768x316-1.webp)
 
-## 🎨 DESIGN: How to reduce the weight of aircraft seats?
-
----
+## 🎨 Design: How to Reduce the Weight of the Seat
 
 ### 💺 Appearance
 
@@ -66,26 +60,30 @@ In terms of materials, it is also regulated by the Chinese national safety stand
 
 **Y-shaped chair legs**
 
-Get guidance from topologically optimized form, and use two fork trusses to provide more direct support for the basin.
+The leg structure is guided by topology optimization. Two forked trusses provide more direct support for the seat pan, reducing unnecessary material while keeping the force path clear.
 
-**Optimization of the cross-section structure of the front beam:**
+**Front beam cross-section optimization**
 
-The bending of the sheet metal is carried out by extending the scale forward and inserting a longitudinal welded plate. This creates an I-shaped cross-sectional structure which is more resistant to bending overall , and results in a more uniform stress distribution in the basin.
+The front beam uses a bent sheet-metal structure with an extended scale and a longitudinal welded plate. This creates an I-shaped cross-section that improves bending resistance and distributes stress more evenly across the seat pan.
 
-**The internal structure of the backrest uses a Y-shaped mesh distribution:**
+**Y-shaped mesh inside the backrest**
 
-We use the structure of a badminton racket as the frame part. The cross section of the frame uses an inner curved section to spread the impact force to the whole frame.
+The backrest frame borrows from the structure of a badminton racket. Its internal curved sections spread impact forces across the frame, reducing local stress concentration.
 
 ![](./img/PortfolioSingleRGB_Page_14.webp)
 
 ### 👨 User Experience
 
-The shape of the handrail is implied to divide the area of the user on both sides, the part of the backrest near the spine is close to the body curve, providing better support
+The armrest shape subtly separates the personal space of passengers on both sides. The area of the backrest near the spine follows the body curve more closely, providing better support while maintaining a lighter visual language.
 
 ![](./img/PortfolioSingleRGB_Page_16-2000x1414-1.webp)
 
 ### 🧱 Materials
 
-Cushion and backrest use composite sponge structure, and density distribution according to sitting pressure. Inspired by sneakers, use wavy sections to distribute pressure
+The cushion and backrest use a composite foam structure with density distributed according to sitting pressure. Inspired by sneaker midsoles, wavy sections help disperse pressure and reduce material use where full density is not needed.
 
 ![](./img/PortfolioSingleRGB_Page_15-2000x1414-1.webp)
+
+## 💡 Design Outcome
+
+Minimalism reduces weight through structural clarity, material precision, and comfort-aware detailing. The final concept does not rely on a single lightweight trick. Instead, it combines optimized load paths, selective material use, and ergonomic support to create an aircraft seat that is lighter while still responding to the safety and experience requirements of aviation design.

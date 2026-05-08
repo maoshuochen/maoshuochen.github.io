@@ -2,110 +2,110 @@
 
 ![](./img/f0f11e6e2947f347ee58a480568f950-2000x1125-1.webp)
 
-**_“ Spotlight is a public transportation recognition system based on future intelligent route planning bus services. This system uses light, sound, and AR to help users identify the bus they are booking from among many similar vehicles. ”_**
+**_“Spotlight is a vehicle identification system for future dynamic public transit. It uses light, sound, and mobile AR to help passengers find the correct bus among many visually similar vehicles.”_**
 
-## 🚌 BACKGROUND: Future Bus System
+## 🚌 Background: Future Bus Systems
 
 ### 🏙️ Urbanization
 
-With the intensification of urbanization in the future, the population density has surged, environmental pollution problems have become more prominent, and people’s commuting will become more and more a problem. Public transport with higher space utilization and more environmental protection also takes an increasingly important role in urban transport.
+As urbanization continues, population density increases and environmental pressure becomes more visible. Public transportation will play a more important role because it uses road space more efficiently and can reduce the environmental impact of daily commuting.
 
 ### 🌐 Internet of Vehicles
 
-With the development of technologies such as 5G, big data, autonomous driving, and electrification, the Internet of Vehicles will be realized in the near future.
+With the development of 5G, big data, autonomous driving, and electrification, vehicles will become increasingly connected. Public transit systems may be able to respond to real-time passenger demand instead of relying only on fixed routes.
 
 ### 🚌 Future Bus System
 
-In the future, the bus route will no longer be fixed, but the intelligent transportation system will be flexibly planned according to the actual situation.
+In this future scenario, bus routes may become dynamic and on-demand. An intelligent transportation system can assign vehicles and routes according to real-time conditions.
 
 ![](./img/Asset-1.webp)
 
-There are no fixed bus routes in the future
+Future buses may no longer follow fixed routes.
 
-## 🎯 TARGET: Identification Problem
+## 🎯 Target: The Identification Problem
 
-Such a highly flexible public transportation system can also create new problems. At the peak time, many buses with the same appearance will appear at the same time and in the same location. It is naturally a problem for users to find the right bus that should get on.
+A highly flexible public transportation system also creates a new problem. During peak hours, many vehicles with similar appearances may arrive at the same pickup area at the same time. Passengers need to identify the exact vehicle assigned to them quickly and confidently.
 
 ![](./img/image-1581003482679.webp)
 
-In response to such a problem, we have designed a car-recognition interactive system – Spotlight. It takes the additional lights of the vehicle as the core, the mobile AR recognition, and sound as the supplement.
+Spotlight responds to this problem with a vehicle identification system. The core signal is an additional light system on the vehicle, supported by mobile AR and directional sound. The design focuses on long-distance recognition, low cognitive load, privacy protection, and low retrofit cost.
 
-## 📰 STORYBOARD: Go through the Spotlight
+## 📰 Storyboard: Experiencing Spotlight
 
 ### 📱 Pre-order
 
-We experience this system from the perspective of a future office worker John. When John needs to travel, he only needs to book a car in the APP, enter the starting point first, and the system will assign the nearest reasonable parking point. Enter the endpoint again, and after confirming, the system will assign an on-street intelligent bus, pick John at the scheduled departure point at the scheduled time, and prompt John to identify the color of the bus.
+The experience is described through John, a future office worker. When John needs to travel, he books a vehicle in the app. After he enters the origin and destination, the system assigns a suitable pickup point, an intelligent bus, and a recognition color for the vehicle.
 
 <video src="/posts/spotlight/img/SpotlightStoryboard-1_x264.mp4"></video>
 
 ### 🔍 Find the Bus
 
-The bus will arrive at the boarding point in advance to wait for John, and the lights slowly breathe as a stop. After John arrives at the pick-up location, there may be multiple buses at the same location. At this point, John can lift the phone and use the app’s AR function to assist identification. At this time, the mobile phone interface becomes dark, and when John’s reserved bus appears on the interface, AR will highlight the bus to assist John’s identification.
+The bus arrives at the pickup point in advance and waits with a slow breathing light. When John reaches the pickup area, several similar buses may already be there. He raises his phone and uses AR to identify the assigned bus. The app darkens the camera view and highlights the correct vehicle when it appears on screen.
 
 <video src="/posts/spotlight/img/SpotlightStoryboard-2_x264.mp4"></video>
 
-### ✅ Make Sure
+### ✅ Confirmation
 
-When John finds the bus he has booked, AR will also prompt the fastest boarding route. As John approached the bus, the breathing rate of the lights accelerated to remind John.
+After John finds the assigned bus, AR also shows the fastest boarding route. As he gets closer, the breathing light becomes faster, creating a clear confirmation signal before he reaches the door.
 
 <video src="/posts/spotlight/img/SpotlightStoryboard-3_x264.mp4"></video>
 
-### 👆 Get on the Bus
+### 👆 Boarding
 
-When John reached the door, the door opened automatically for him. When John stepped on the pedal, the green light around the B-pillar door frame and the pedal sounded the correct tone. If someone follows John into the wrong car, a red light will light up around the B pillar door frame, and an error sound will sound to prevent the user from getting in the wrong car. When the vehicle exits, the overhead lights will go out. At low speeds, buses will also play a soft, natural sound continuously to remind the vehicle that it is driving. We chose here the sound of the waves.
+When John reaches the door, it opens automatically. As he steps onto the bus, green lights around the B-pillar and the step confirm that he is boarding the correct vehicle. If another passenger follows him onto the wrong bus, the door frame turns red and an error sound plays. When the vehicle departs, the top light turns off. At low speed, the bus plays a soft natural sound, such as waves, to make the moving vehicle noticeable without creating a harsh warning.
 
 <video src="/posts/spotlight/img/SpotlightStoryboard-4_x264.mp4"></video>
 
 ### ❗ Warn Pedestrians
 
-When a passerby blocks the driving route, the overhead light will flash red, and the closer to the passerby, the faster the strobe light. The sound of the driving which like wave sound, also became intense to warn passersby.
+If a pedestrian blocks the driving path, the top light flashes red. The closer the vehicle is to the pedestrian, the faster the flashing becomes. The driving sound also becomes more intense, creating a multimodal warning.
 
 <video src="/posts/spotlight/img/SpotlightStoryboard-5_x264.mp4"></video>
 
-### 👇 Get off the Bus
+### 👇 Getting Off
 
-John’s destination has arrived. When John got out of the car, a green light would also light up around the door frame and the correct alert sounded. If someone followed John but got in the wrong place, a red light would turn on around the door frame, and an error sound would sound to prevent her from getting in the wrong car.
+When John reaches his destination and gets off, green lights and a confirmation sound appear again. If someone tries to get off at the wrong stop, red lights and an error sound warn them before they leave the vehicle.
 
 <video src="/posts/spotlight/img/SpotlightStoryboard-6_x264.mp4"></video>
 
-## 💡 INTERACTION: Solutions to the Identification Problem
+## 💡 Interaction: Solving the Identification Problem
 
 ### ✨ Breathing Lights
 
-We have different light breathing animations to indicate the status of the vehicle, assist the user in finding a car, and so on. The picture is a breathing bus light when the bus docked. As the user approaches, the breathing speed will gradually increase.
+Different breathing light animations represent different vehicle states, such as waiting, being approached, or warning. When the assigned passenger gets closer, the breathing rhythm accelerates, making the vehicle feel responsive without requiring the passenger to read text.
 
-### ✅ How to Make Sure
+### ✅ Confirmation
 
-When the user successfully gets on the right bus and gets off at the right destination, the lights around the door frame will be a green light and sound the correct prompt. If the user successfully gets on the wrong bus and gets off at the wrong destination, there will be a red light, and sound the warning prompt.
+The system uses consistent confirmation rules. Correct actions are reinforced with green light and a positive sound. Wrong boarding or wrong alighting is interrupted with red light and a warning sound. This reduces uncertainty at the moments where passengers are most likely to make mistakes.
 
-### ❔ Why We Choose the Light
+### ❔ Why Light
 
-Let us explain why we give up the screen, graphics, and other elements, but use the basic color distinction and the brightness of the light to help users find the bus.
+We chose light instead of screens or text-heavy graphics for three reasons.
 
-- **Excellent Long-distance Recognizability**  
-  Needless to say, users definitely don’t want to go near the car to confirm whether the car is picking up.
-- **Privacy Protection**  
-  If the screen and image text are used to prompt the user, and the user needs to easily recognize it, it will inevitably involve the user’s name or screen name, mobile phone number, and other information, which is also difficult to accept.
-- **Low Cost**  
-  From the perspective of users, the reason why they choose to travel by public transportation is obvious because public transportation is cheap enough and affordable. This also requires us to retrofit the system to control costs as much as possible.
+- **Long-distance recognizability**  
+  Passengers should be able to identify the vehicle before standing next to it.
+- **Privacy protection**  
+  A screen that displays names, phone numbers, or personal labels would make identification easier, but it would also expose private information in public space.
+- **Low cost**  
+  Public transit needs affordable infrastructure. A light-based system can be added to existing vehicles without requiring a fully redesigned bus.
 
-### 🎨 The Choice of Light Colors
+### 🎨 Light Color Selection
 
-Specific to the choice of colors, we should choose colors that are sufficiently distinguishable and familiar enough for the user. Naturally, we first think of rainbow colors: red, orange, yellow, green, blue, indigo, violet.
+The selected colors need to be distinguishable and familiar. We began with the rainbow colors: red, orange, yellow, green, blue, indigo, and violet.
 
-There are three factors will affect the colors of the light that the users see: the colors of the environment, the brightness of the light, the color shift of the light device. So we remove the orange that may be confused with the yellow. And blue that may be confused with indigo.
+Three factors affect how users perceive light color: environmental color, light brightness, and color shift in the hardware. Based on this, orange was removed because it may be confused with yellow, and blue was removed because it may be confused with indigo.
 
 ![](./img/Asset-2.webp)
 
-### 📱 APP Interface
+### 📱 App Interface
 
 ![](./img/PortfolioSingleRGB_Page_24-2000x1414.webp)
 
-## 💵 BUSINESS: Reduce System Cost
+## 💵 Business: Reducing System Cost
 
-### **🛠️ Modification of Existing Bus**
+### **🛠️ Retrofitting Existing Buses**
 
-Our identification system can be implemented by retrofitting existing buses. Take a shared bicycle as an example. It is good to design a new car from the beginning like Mobike. It can also be done by networking traditional models and adding some hardware like Ofo. Our solution can also be achieved by connecting the buses to the bus networking system and adding identification lights. It does not necessarily require advanced technologies such as unmanned driving.
+The identification system can be implemented by retrofitting existing buses. Similar to shared bicycles, a service can either design a completely new vehicle or upgrade existing vehicles with networked hardware. Spotlight follows the second path: connect buses to the transit network and add identification lights. It does not depend on full autonomy to become useful.
 
 ![](./img/Asset-3.webp)
 
@@ -113,15 +113,15 @@ Our identification system can be implemented by retrofitting existing buses. Tak
 
 ![](./img/Asset-4.webp)
 
-- **Light Strips**  
-  Non-direct light strips are arranged on the top of the bus to help users find buses. By reflecting, the light gets softer and larger recognition area, which improves recognizability and reduces light pollution.
+- **Light strips**  
+  Indirect light strips are placed on the top of the bus. Reflected light creates a softer and larger recognition area, improving visibility while reducing light pollution.
 - **Camera**  
-  A wide-angle face recognition camera is also arranged above the door frame to identify the user.
+  A wide-angle facial recognition camera is placed above the door frame to identify passengers during boarding.
 - **Speaker**  
-  We arranged several speakers around the top to ensure that pedestrians in all directions can be reminded and that the reminder can have a certain orientation and reduce the disturbance.
+  Multiple speakers are arranged around the top of the vehicle, allowing warnings to be perceived from different directions while reducing unnecessary disturbance.
 
-### 🚌 Multiple bus sizes
+### 🚌 Multiple Bus Sizes
 
-The size and load capacity of the car body can also be changed according to the needs of different regions, different time periods, and different routes to achieve more optimal distribution and adapt to a wider range of scenarios.
+Vehicle size and load capacity can change according to different regions, time periods, and route demands. This allows the transit system to distribute capacity more efficiently and adapt to a wider range of urban scenarios.
 
 ![](./img/Asset-5.webp)
