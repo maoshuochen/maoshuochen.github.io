@@ -355,12 +355,13 @@ function getMarkdownComponents(articleId?: string, openLightbox?: (src: string, 
     },
     video: (props: React.VideoHTMLAttributes<HTMLVideoElement>) => {
       const { src, className, ...rest } = props;
+      const resolvedSrc = resolveMediaPath(src, articleId);
       return (
         <video
           controls
           playsInline
           preload="metadata"
-          src={src}
+          src={resolvedSrc}
           className={clsx(
             className,
             "my-4 w-full rounded-lg border border-zinc-200",
@@ -397,9 +398,7 @@ function rehypeImagePaths(articleId?: string) {
       }
       // 处理视频
       if (node.tagName === 'video' && typeof node.properties?.src === "string") {
-        if (node.properties.src.startsWith('./img/')) {
-          node.properties.src = `/posts/${articleId}/img/${node.properties.src.slice(6)}`;
-        }
+        node.properties.src = resolveMediaPath(node.properties.src, articleId);
       }
       
       if (node.children && Array.isArray(node.children)) {
@@ -413,15 +412,13 @@ function rehypeImagePaths(articleId?: string) {
 
 // 解析图片路径
 function resolveImagePath(src?: string, articleId?: string) {
+  return resolveMediaPath(src, articleId);
+}
+
+function resolveMediaPath(src?: string, articleId?: string) {
   if (!src) return src;
-  if (src.startsWith("./img/")) {
-    const imgPath = `/posts/${articleId}/img/${src.slice(6)}`;
-    // 如果已经是 .webp 格式，直接使用
-    if (src.endsWith('.webp')) {
-      return imgPath;
-    }
-    // 否则使用 .webp 格式
-    return `${imgPath}.webp`;
+  if (src.startsWith("./") && articleId) {
+    return `/posts/${articleId}/${src.slice(2)}`;
   }
   return src;
 }

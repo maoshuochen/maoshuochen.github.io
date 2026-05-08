@@ -46,7 +46,7 @@ export const articles: Article[] = [
     subtitleKey: "moseySubtitle",
     image_url: "mosey/mosey-cover.jpg",
     content_url: "mosey/mosey.md",
-    content_url_zh: "mosey/mosey.md",
+    content_url_zh: "mosey/mosey.zh.md",
   },
   {
     id: "cubes-footbridge",
@@ -54,7 +54,7 @@ export const articles: Article[] = [
     subtitleKey: "cubesFootbridgeSubtitle",
     image_url: "cubes-footbridge/final11192-01-Copy.webp",
     content_url: "cubes-footbridge/cubes-footbridge.md",
-    content_url_zh: "cubes-footbridge/cubes-footbridge.md",
+    content_url_zh: "cubes-footbridge/cubes-footbridge.zh.md",
   },
   {
     id: "fluxor",
@@ -62,7 +62,7 @@ export const articles: Article[] = [
     subtitleKey: "fluxorSubtitle",
     image_url: "fluxor/img/image-1575701513586-768x432-1.webp",
     content_url: "fluxor/fluxor.md",
-    content_url_zh: "fluxor/fluxor.md",
+    content_url_zh: "fluxor/fluxor.zh.md",
   },
   {
     id: "ingenious-skin",
@@ -70,7 +70,7 @@ export const articles: Article[] = [
     subtitleKey: "ingeniousSkinSubtitle",
     image_url: "ingenious-skin/img/1650211836-Panel1-scaled.jpg",
     content_url: "ingenious-skin/ingenious-skin.md",
-    content_url_zh: "ingenious-skin/ingenious-skin.md",
+    content_url_zh: "ingenious-skin/ingenious-skin.zh.md",
   },
   {
     id: "science-exhibition",
@@ -78,7 +78,7 @@ export const articles: Article[] = [
     subtitleKey: "scienceExhibitionSubtitle",
     image_url: "science-exhibition/img/Studio1_Page_03-1536x864.jpg",
     content_url: "science-exhibition/science-exhibition.md",
-    content_url_zh: "science-exhibition/science-exhibition.md",
+    content_url_zh: "science-exhibition/science-exhibition.zh.md",
   },
   {
     id: "helmet-generative",
@@ -86,6 +86,6 @@ export const articles: Article[] = [
     subtitleKey: "helmetGenerativeSubtitle",
     image_url: "helmet-generative/Artboard-1.webp",
     content_url: "helmet-generative/helmet-generative.md",
-    content_url_zh: "helmet-generative/helmet-generative.md",
+    content_url_zh: "helmet-generative/helmet-generative.zh.md",
   },
 ];
