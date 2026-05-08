@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link, Outlet } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -31,6 +31,13 @@ export default function Header() {
     { to: "/", label: t('projects') },
     { to: "/about", label: t('aboutMe') },
   ];
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   return (
     <>

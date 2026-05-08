@@ -72,29 +72,47 @@ function ArticleGrid() {
         "sm:w-3/4 sm:grid-cols-2 sm:gap-16 sm:p-8",
       )}
     >
-      {articles.map((article) => (
-        <ArticleCard key={article.id} article={article} t={t} />
+      {articles.map((article, index) => (
+        <ArticleCard key={article.id} article={article} index={index} t={t} />
       ))}
     </div>
   );
 }
 
 // 🎯 单个文章卡片
-function ArticleCard({ article, t }: { article: (typeof articles)[number]; t: (key: TranslationKey) => string }) {
+function ArticleCard({
+  article,
+  index,
+  t,
+}: {
+  article: (typeof articles)[number];
+  index: number;
+  t: (key: TranslationKey) => string;
+}) {
+  const title = t(article.titleKey as TranslationKey);
+  const subtitle = t(article.subtitleKey as TranslationKey);
+
   return (
     <div className="w-full cursor-pointer">
-      <Link to={`/post/${article.id}`}>
+      <Link to={`/post/${article.id}`} aria-label={`${title}: ${subtitle}`}>
         <div
           className={clsx(
-            "h-56 w-full rounded-xl",
+            "h-56 w-full overflow-hidden rounded-xl",
             "border border-zinc-100 dark:border-zinc-800",
-            "bg-white bg-cover p-6",
+            "bg-white",
             "duration-300 hover:shadow-xl",
             "hover:shadow-zinc-200 dark:hover:shadow-zinc-900",
-            "sm:h-72 sm:p-12",
+            "sm:h-72",
           )}
-          style={{ backgroundImage: `url(/posts/${article.image_url})` }}
-        />
+        >
+          <img
+            src={`/posts/${article.image_url}`}
+            alt={title}
+            loading={index < 2 ? "eager" : "lazy"}
+            decoding="async"
+            className="h-full w-full object-cover transition-transform duration-300 hover:scale-[1.03]"
+          />
+        </div>
         <div
           className={clsx(
             "flex w-full flex-col items-start",
@@ -103,9 +121,9 @@ function ArticleCard({ article, t }: { article: (typeof articles)[number]; t: (k
           )}
         >
           <h2 className="font-sans text-xl font-medium sm:text-2xl">
-            {t(article.titleKey as TranslationKey)}
+            {title}
           </h2>
-          <h3 className="text-lg font-light sm:text-xl">{t(article.subtitleKey as TranslationKey)}</h3>
+          <h3 className="text-lg font-light sm:text-xl">{subtitle}</h3>
         </div>
       </Link>
     </div>

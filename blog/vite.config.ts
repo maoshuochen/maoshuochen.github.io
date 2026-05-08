@@ -23,5 +23,20 @@ export default defineConfig({
         drop_debugger: true,
       },
     },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "react-router-dom"],
+          markdown: [
+            "react-markdown",
+            "remark-parse",
+            "remark-gfm",
+            "rehype-raw",
+            "rehype-autolink-headings",
+          ],
+          ui: ["lucide-react", "clsx", "tailwind-merge"],
+        },
+      },
+    },
   },
 });

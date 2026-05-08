@@ -32,6 +32,12 @@ interface MdastNode {
     hProperties?: Record<string, unknown>;
   };
 }
+
+interface MarkdownImage {
+  src: string;
+  alt: string;
+}
+
 // 延迟加载 Markdown 和 TOC 组件
 const Markdown = lazy(() => import("react-markdown"));
 const TOC = lazy(() => import("@/components/TOC"));
@@ -42,9 +48,8 @@ const inFlight = new Map<string, AbortController>();
 export default function Post() {
   const { articleId } = useParams<{ articleId: string }>();
   const { language, t } = useLanguage();
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [lightboxImage, setLightboxImage] = useState('');
-  const [lightboxAlt, setLightboxAlt] = useState('');
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [fallbackLightboxImage, setFallbackLightboxImage] = useState<MarkdownImage | null>(null);
   const tocRef = useRef<TOCItem[]>([]);
 
   const article = useMemo(
@@ -60,6 +65,10 @@ export default function Post() {
     contentUrl ? `/posts/${contentUrl}` : undefined,
     otherUrl ? `/posts/${otherUrl}` : undefined,
   );
+  const markdownImages = useMemo(
+    () => extractMarkdownImages(markdown, articleId),
+    [articleId, markdown],
+  );
   const [toc, setToc] = useState<TOCItem[]>([]);
 
   useEffect(() => {
@@ -69,13 +78,39 @@ export default function Post() {
   }, [markdown, toc]);
 
   const openLightbox = (src: string, alt?: string) => {
-    setLightboxImage(src);
-    setLightboxAlt(alt || '');
-    setLightboxOpen(true);
+    const index = markdownImages.findIndex((image) => image.src === src);
+    if (index >= 0) {
+      setFallbackLightboxImage(null);
+      setLightboxIndex(index);
+      return;
+    }
+    setFallbackLightboxImage({ src, alt: alt || '' });
+    setLightboxIndex(0);
   };
 
   const closeLightbox = () => {
-    setLightboxOpen(false);
+    setLightboxIndex(null);
+    setFallbackLightboxImage(null);
+  };
+
+  const activeLightboxImages = fallbackLightboxImage
+    ? [fallbackLightboxImage]
+    : markdownImages;
+  const activeLightboxImage =
+    lightboxIndex === null ? undefined : activeLightboxImages[lightboxIndex];
+
+  const showPreviousImage = () => {
+    if (!activeLightboxImages.length) return;
+    setLightboxIndex((index) =>
+      index === null ? 0 : (index - 1 + activeLightboxImages.length) % activeLightboxImages.length,
+    );
+  };
+
+  const showNextImage = () => {
+    if (!activeLightboxImages.length) return;
+    setLightboxIndex((index) =>
+      index === null ? 0 : (index + 1) % activeLightboxImages.length,
+    );
   };
 
   if (!article) {
@@ -121,19 +156,23 @@ export default function Post() {
           "lg:w-2/3",
         )}
       >
-        <Suspense fallback={<div>Loading content…</div>}>
-          <Markdown
-            remarkPlugins={[remarkParse, remarkGfm, remarkCollectToc(tocRef)]}
-            rehypePlugins={[
-              rehypeRaw,
-              rehypeImagePaths(articleId),
-              rehypeStripEventHandlers(),
-              rehypeAutolinkHeadings,
-            ]}
-            components={getMarkdownComponents(articleId, openLightbox)}
-          >
-            {markdown}
-          </Markdown>
+        <Suspense fallback={<MarkdownSkeleton />}>
+          {markdown ? (
+            <Markdown
+              remarkPlugins={[remarkParse, remarkGfm, remarkCollectToc(tocRef)]}
+              rehypePlugins={[
+                rehypeRaw,
+                rehypeImagePaths(articleId),
+                rehypeStripEventHandlers(),
+                rehypeAutolinkHeadings,
+              ]}
+              components={getMarkdownComponents(articleId, openLightbox)}
+            >
+              {markdown}
+            </Markdown>
+          ) : (
+            <MarkdownSkeleton />
+          )}
         </Suspense>
       </div>
 
@@ -144,13 +183,20 @@ export default function Post() {
         </Suspense>
       </aside>
 
+      <MobileTOC toc={toc} label={language === "zh" ? "目录" : "Contents"} />
+
       {/* 灯箱 */}
-      <Lightbox
-        src={lightboxImage}
-        alt={lightboxAlt}
-        isOpen={lightboxOpen}
-        onClose={closeLightbox}
-      />
+      {activeLightboxImage && (
+        <Lightbox
+          src={activeLightboxImage.src}
+          alt={activeLightboxImage.alt}
+          isOpen={lightboxIndex !== null}
+          onClose={closeLightbox}
+          onPrevious={showPreviousImage}
+          onNext={showNextImage}
+          hasNavigation={activeLightboxImages.length > 1}
+        />
+      )}
     </div>
   );
 }
@@ -281,6 +327,97 @@ function sameToc(a: TOCItem[], b: TOCItem[]) {
     }
   }
   return true;
+}
+
+function MarkdownSkeleton() {
+  return (
+    <div className="animate-pulse space-y-5" aria-label="Loading content">
+      <div className="h-9 w-3/4 rounded bg-zinc-200 dark:bg-zinc-800" />
+      <div className="space-y-3">
+        <div className="h-4 rounded bg-zinc-200 dark:bg-zinc-800" />
+        <div className="h-4 w-11/12 rounded bg-zinc-200 dark:bg-zinc-800" />
+        <div className="h-4 w-4/5 rounded bg-zinc-200 dark:bg-zinc-800" />
+      </div>
+      <div className="h-64 rounded-lg bg-zinc-200 dark:bg-zinc-800" />
+      <div className="space-y-3">
+        <div className="h-4 rounded bg-zinc-200 dark:bg-zinc-800" />
+        <div className="h-4 w-10/12 rounded bg-zinc-200 dark:bg-zinc-800" />
+      </div>
+    </div>
+  );
+}
+
+function MobileTOC({ toc, label }: { toc: TOCItem[]; label: string }) {
+  const [open, setOpen] = useState(false);
+
+  if (toc.length === 0) return null;
+
+  const scrollToHeading = (id: string) => {
+    const target = document.getElementById(id);
+    if (!target) return;
+    const y = target.getBoundingClientRect().top + window.scrollY - 72;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    setOpen(false);
+  };
+
+  return (
+    <div className="lg:hidden">
+      <button
+        type="button"
+        onClick={() => setOpen((value) => !value)}
+        className={clsx(
+          "fixed bottom-4 right-4 z-30 rounded-full border px-4 py-2 text-sm shadow-lg",
+          "border-zinc-200 bg-white/95 text-zinc-900 backdrop-blur",
+          "dark:border-zinc-800 dark:bg-zinc-950/95 dark:text-zinc-50",
+        )}
+        aria-expanded={open}
+      >
+        {label}
+      </button>
+
+      {open && (
+        <div
+          className={clsx(
+            "fixed inset-x-4 bottom-16 z-30 max-h-[50vh] overflow-auto rounded-lg border p-4 shadow-2xl",
+            "border-zinc-200 bg-white/95 backdrop-blur",
+            "dark:border-zinc-800 dark:bg-zinc-950/95",
+          )}
+        >
+          <ul className="space-y-2">
+            {toc.map(({ id, text, level }) => (
+              <li key={id} style={{ paddingLeft: `${Math.max(0, level - 2) * 12}px` }}>
+                <button
+                  type="button"
+                  onClick={() => scrollToHeading(id)}
+                  className="block w-full text-left text-sm text-zinc-600 dark:text-zinc-300"
+                >
+                  {text}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function extractMarkdownImages(markdown: string, articleId?: string): MarkdownImage[] {
+  if (!markdown || !articleId) return [];
+  const images: MarkdownImage[] = [];
+  const pattern = /!\[([^\]]*)\]\(([^)]+)\)/g;
+  let match: RegExpExecArray | null;
+
+  while ((match = pattern.exec(markdown))) {
+    const rawSrc = match[2].trim();
+    if (!rawSrc || rawSrc.startsWith("data:")) continue;
+    images.push({
+      alt: match[1] || "",
+      src: resolveImagePath(rawSrc, articleId) ?? rawSrc,
+    });
+  }
+
+  return images;
 }
 
 function rehypeStripEventHandlers() {
