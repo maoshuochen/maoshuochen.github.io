@@ -2,6 +2,8 @@
 
 PaperClip is a literature knowledge management tool for academic researchers. It helps researchers move from passive reading to active knowledge construction by turning papers, highlights, notes, and conceptual relationships into a connected research workspace. The product is inspired by the Zettelkasten method and supported by knowledge graph technology.
 
+![](./img/top-view-grid.jpg)
+
 <video src="/posts/paperclip/img/paperclip.mp4"></video>
 
 ## 💻 Prototype

@@ -8,6 +8,8 @@ MOSEY explores a warmer human-vehicle relationship for this in-between moment. I
 
 ![](./export12_0356.webp)
 
+![](./img/portfolio-page-04.jpg)
+
 <video src="/posts/mosey/Mosey_x264.mp4" controls></video>
 
 ## Research: The L3 Handover Problem
@@ -15,6 +17,8 @@ MOSEY explores a warmer human-vehicle relationship for this in-between moment. I
 When autonomous driving enters Level 3, the system can drive under specific conditions, but the person inside the vehicle still needs to take over when the system reaches its limits. This creates a critical handover problem: if the vehicle asks for help too late, or if the driver does not understand the situation quickly enough, the transfer from machine control to human control can become dangerous.
 
 The project therefore frames autonomy as a supplement to human driving rather than a full replacement. It asks whether future driving can keep the pleasure of control while also providing the safety and convenience of automation.
+
+![](./img/portfolio-page-05.jpg)
 
 ## Design Direction: Human-Machine Symbiosis
 
@@ -26,6 +30,8 @@ MOSEY proposes a new relationship between human and vehicle based on three user 
 
 The final concept combines AR windows, a responsive seat chassis, and a wearable exoskeleton. Together, they turn the driver's body posture into an input method and make the vehicle's intention visible before action happens.
 
+![](./img/portfolio-page-06.jpg)
+
 ## Interaction Concept
 
 ### Turning Interaction
@@ -36,9 +42,13 @@ When the vehicle is about to turn, the AR window reminds the driver in advance. 
 
 When the vehicle detects a dangerous situation that it cannot handle alone, it alerts the driver early enough for a response. The driver can make an emergency stop posture, and the vehicle stops accordingly. This interaction gives the driver a simple embodied response in moments where traditional controls may be too slow.
 
+![](./img/portfolio-page-08.jpg)
+
 ## Adaptive Exoskeleton
 
 The exoskeleton is designed as an organic interface between the driver and the vehicle. Through long-term use, it gradually adapts to the driver's body and habits. The concept imagines miniature 3D-printing heads inside the exoskeleton, allowing the structure to simulate growth and become more personalized over time.
+
+![](./img/portfolio-page-07.jpg)
 
 ## Summary
 

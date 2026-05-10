@@ -56,6 +56,8 @@ Four business and service modes were developed from the demand analysis: stores 
 
 ## Service Scenarios
 
+![](./img/mobile-service-cabins.webp)
+
 ### Mobile Flash Store
 
 A Fluxor vehicle can bring curated products from different brands directly into a residential area. Instead of a static neighborhood shop, the service becomes a rotating local event where people discover clothing, accessories, perfume, or lifestyle goods near home.

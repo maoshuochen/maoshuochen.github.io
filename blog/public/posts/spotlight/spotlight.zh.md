@@ -30,6 +30,8 @@
 
 针对这样的问题，我们设计了一个车辆识别交互系统——Spotlight。它以车辆附加灯为核心，以移动 AR 识别和声音为补充。
 
+![](./img/future-transit-stop.webp)
+
 ## 📰 故事板：体验 Spotlight
 
 ### 📱 预订
@@ -53,6 +55,8 @@
 ### 👆 上车
 
 当 John 到达车门时，车门自动为他打开。当 John 踏上踏板时，B 柱门框周围的绿灯和踏板会响起正确的提示音。如果有人跟随 John 上错车，B 柱门框周围会亮起红灯，并响起错误提示音以防止用户上错车。当车辆出发时，顶灯会熄灭。在低速行驶时，公交车也会持续播放柔和自然的声音以提醒车辆正在行驶。我们在这里选择了海浪的声音。
+
+![](./img/boarding-confirmation-scene.webp)
 
 <video src="/posts/spotlight/img/SpotlightStoryboard-4_x264.mp4"></video>
 

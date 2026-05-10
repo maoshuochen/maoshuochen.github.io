@@ -96,4 +96,6 @@ Based on this, the proposal uses low-saturation, high-lightness colors, woven te
 
 ## 💡 Design Outcome
 
+![](./img/render730.152-1536x680.webp)
+
 Minimalism reduces weight through structural clarity, material precision, and comfort-aware detailing. The final concept does not rely on a single lightweight trick. Instead, it combines optimized load paths, selective material use, and ergonomic support to create an aircraft seat that is lighter while still responding to the safety and experience requirements of aviation design.

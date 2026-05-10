@@ -30,6 +30,8 @@ A highly flexible public transportation system also creates a new problem. Durin
 
 Spotlight responds to this problem with a vehicle identification system. The core signal is an additional light system on the vehicle, supported by mobile AR and directional sound. The design focuses on long-distance recognition, low cognitive load, privacy protection, and low retrofit cost.
 
+![](./img/future-transit-stop.webp)
+
 ## 📰 Storyboard: Experiencing Spotlight
 
 ### 📱 Pre-order
@@ -53,6 +55,8 @@ After John finds the assigned bus, AR also shows the fastest boarding route. As 
 ### 👆 Boarding
 
 When John reaches the door, it opens automatically. As he steps onto the bus, green lights around the B-pillar and the step confirm that he is boarding the correct vehicle. If another passenger follows him onto the wrong bus, the door frame turns red and an error sound plays. When the vehicle departs, the top light turns off. At low speed, the bus plays a soft natural sound, such as waves, to make the moving vehicle noticeable without creating a harsh warning.
+
+![](./img/boarding-confirmation-scene.webp)
 
 <video src="/posts/spotlight/img/SpotlightStoryboard-4_x264.mp4"></video>
 

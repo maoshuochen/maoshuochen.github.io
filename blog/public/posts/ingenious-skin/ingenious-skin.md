@@ -14,6 +14,8 @@ This approach gives the smart cockpit a softer interaction vocabulary. The door 
 
 The interaction surface was developed through material tests and embroidery experiments. Conductive thread is embedded into the pattern so the gesture path remains visible, tactile, and integrated with the interior textile instead of appearing as a separate electronic control.
 
+![](./img/1650212759-Feature-Image.jpg)
+
 ![](./img/1650212631-Feature-Image.webp)
 
 ![](./img/1650212842-Feature-Image.webp)

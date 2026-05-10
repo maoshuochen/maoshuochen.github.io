@@ -8,6 +8,8 @@ The bridge is imagined as more than a linear connection across water. It becomes
 
 ![](./final11192-01-Copy.webp)
 
+![](./img/portfolio-page-26.jpg)
+
 ## Growth Algorithm
 
 The form is generated from a set of simple behaviors:
@@ -19,6 +21,8 @@ The form is generated from a set of simple behaviors:
 - **Exclusion** prevents overcrowding by controlling how particles search for nearby points.
 
 By adjusting these rules, the project explores how a digital system can produce forms that feel biological without directly copying a plant.
+
+![](./img/portfolio-page-27.jpg)
 
 ## Bridge Deck Structure
 

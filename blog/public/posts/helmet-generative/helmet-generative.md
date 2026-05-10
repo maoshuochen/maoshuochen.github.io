@@ -8,6 +8,14 @@ Studies have shown that the impact of an accident on the head during riding come
 
 Traditional helmets often balance protection, weight, and ventilation through compromise. This concept uses generative structure to redistribute material: reinforcing high-risk impact areas, reducing redundant mass in lower-risk areas, and leaving space for airflow through the lattice structure.
 
+![](./Helmet1028.87-2000x1125-1.webp)
+
+## Workflow
+
+The design workflow starts from accident conditions and safety standards, then moves into generative exploration. Autodesk Fusion 360 is used to generate the primary support structure, Grasshopper refines the dot matrix and local density, and ANSYS verifies the result under selected impact conditions.
+
+The purpose of this workflow is not to create a visually complex shell for its own sake. It is to let the structure explain where protection is needed, where material can be removed, and how ventilation can be integrated into the same geometry.
+
 <video src="/posts/helmet-generative/GenerativeHelmet.mp4" controls></video>
 
 ## Summary
