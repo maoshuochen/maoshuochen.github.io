@@ -9,6 +9,14 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    id: "intellisight",
+    titleKey: "intellisightTitle",
+    subtitleKey: "intellisightSubtitle",
+    image_url: "intellisight/intellisight-cover.png",
+    content_url: "intellisight/intellisight.md",
+    content_url_zh: "intellisight/intellisight.zh.md",
+  },
+  {
     id: "paperclip",
     titleKey: "paperclipTitle",
     subtitleKey: "paperclipSubtitle",

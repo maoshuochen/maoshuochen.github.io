@@ -65,6 +65,8 @@ export const translations = {
     aiText2: '用 Langchain 实现一个基于设计方法论的 AI Agent -- Problem Framer，可输入现实中的复杂问题 (Wicked Problem)，模拟背景调研、利益相关者分析、主题分析和创意发散步骤，产出一篇研究报告。',
     
     // Projects
+    intellisightTitle: 'IntelliSight',
+    intellisightSubtitle: 'NLP 支持的访谈文本处理工具',
     paperclipTitle: 'PaperClip',
     paperclipSubtitle: '面向学术研究的纸质知识管理工具',
     minimalismTitle: 'Minimalism',
@@ -150,6 +152,8 @@ export const translations = {
     aiText2: 'Built Problem Framer, an AI Agent based on design methodology using Langchain. It takes complex real-world problems (Wicked Problems) as input, simulates background research, stakeholder analysis, thematic analysis, and creative brainstorming steps, and produces a research report.',
     
     // Projects
+    intellisightTitle: 'IntelliSight',
+    intellisightSubtitle: 'NLP-Supported Interview Text Processing Tool',
     paperclipTitle: 'PaperClip',
     paperclipSubtitle: 'Paper Knowledge Management Tool for Academic Research',
     minimalismTitle: 'Minimalism',
