@@ -2,7 +2,7 @@
 
 Minimalism 是一个飞机经济舱座椅轻量化设计项目。它试图在**结构安全**、**材料性能**和**乘坐体验**之间取得平衡，而不是把减重简单理解为“去掉材料”。
 
-<video src="/posts/minimalism/img/AircraftSeats.mp4"></video>
+<video src="/posts/minimalism/img/AircraftSeats.mp4" controls></video>
 
 ## 目标：为什么飞机座椅需要减重？
 

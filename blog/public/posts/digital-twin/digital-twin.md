@@ -2,7 +2,7 @@
 
 Industrial 4.0+ is a digital twin system for human-machine collaboration in industrial production. It connects robots, workers, production lines, action data, and test reports into one workflow, allowing production-line adjustments to move from on-site trial and error toward a process of planning, simulation, validation, and gradual real-world deployment.
 
-<video src="/posts/digital-twin/img/1623061433_x264.mp4"></video>
+<video src="/posts/digital-twin/img/1623061433_x264.mp4" controls></video>
 
 The video starts from the evolution of Industry 1.0 to Industry 4.0. As industrial systems become increasingly automated, full automation also becomes more difficult and expensive to implement. For many companies, it does not always translate into better economic value. This project therefore proposes an Industrial 4.0+ direction: moving beyond pure mechanical automation toward a more flexible, learnable, and plannable model of human-machine collaboration.
 

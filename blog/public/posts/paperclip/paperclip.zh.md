@@ -4,7 +4,7 @@ PaperClip 是一款面向**学术研究者**的文献知识管理工具。它帮
 
 ![](./img/top-view-grid.jpg)
 
-<video src="/posts/paperclip/img/paperclip.mp4"></video>
+<video src="/posts/paperclip/img/paperclip.mp4" controls></video>
 
 ## 💻 原型演示
 
@@ -12,6 +12,10 @@ PaperClip 是一款面向**学术研究者**的文献知识管理工具。它帮
 
 <iframe style="aspect-ratio: 16/9;" src="/posts/paperclip/paperclip-prototype/index.html#id=aulfuv&amp;p=subs&amp;sc=2&amp;c=1" onload="this.style.display='block'" width="100%" frameborder="0">
 </iframe>
+
+下面的视频完整讲解了项目逻辑，从研究背景、系统框架到原型工作流都有覆盖。
+
+<video src="/posts/paperclip/img/paperclip_presentation.mp4" controls></video>
 
 ## 📚 研究背景：为什么文献知识难以管理
 

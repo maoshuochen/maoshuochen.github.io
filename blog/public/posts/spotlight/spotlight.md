@@ -4,6 +4,8 @@
 
 **_“Spotlight is a vehicle identification system for future dynamic public transit. It uses light, sound, and mobile AR to help passengers find the correct bus among many visually similar vehicles.”_**
 
+<video src="/posts/spotlight/img/SPOT-LIGHT.mp4" controls></video>
+
 ## 🚌 Background: Future Bus Systems
 
 ### 🏙️ Urbanization
@@ -38,19 +40,19 @@ Spotlight responds to this problem with a vehicle identification system. The cor
 
 The experience is described through John, a future office worker. When John needs to travel, he books a vehicle in the app. After he enters the origin and destination, the system assigns a suitable pickup point, an intelligent bus, and a recognition color for the vehicle.
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-1_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-1_x264.mp4" controls></video>
 
 ### 🔍 Find the Bus
 
 The bus arrives at the pickup point in advance and waits with a slow breathing light. When John reaches the pickup area, several similar buses may already be there. He raises his phone and uses AR to identify the assigned bus. The app darkens the camera view and highlights the correct vehicle when it appears on screen.
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-2_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-2_x264.mp4" controls></video>
 
 ### ✅ Confirmation
 
 After John finds the assigned bus, AR also shows the fastest boarding route. As he gets closer, the breathing light becomes faster, creating a clear confirmation signal before he reaches the door.
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-3_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-3_x264.mp4" controls></video>
 
 ### 👆 Boarding
 
@@ -58,19 +60,19 @@ When John reaches the door, it opens automatically. As he steps onto the bus, gr
 
 ![](./img/boarding-confirmation-scene.webp)
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-4_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-4_x264.mp4" controls></video>
 
 ### ❗ Warn Pedestrians
 
 If a pedestrian blocks the driving path, the top light flashes red. The closer the vehicle is to the pedestrian, the faster the flashing becomes. The driving sound also becomes more intense, creating a multimodal warning.
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-5_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-5_x264.mp4" controls></video>
 
 ### 👇 Getting Off
 
 When John reaches his destination and gets off, green lights and a confirmation sound appear again. If someone tries to get off at the wrong stop, red lights and an error sound warn them before they leave the vehicle.
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-6_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-6_x264.mp4" controls></video>
 
 ## 💡 Interaction: Solving the Identification Problem
 

@@ -4,7 +4,7 @@ PaperClip is a literature knowledge management tool for academic researchers. It
 
 ![](./img/top-view-grid.jpg)
 
-<video src="/posts/paperclip/img/paperclip.mp4"></video>
+<video src="/posts/paperclip/img/paperclip.mp4" controls></video>
 
 ## 💻 Prototype
 
@@ -12,6 +12,10 @@ PaperClip is a literature knowledge management tool for academic researchers. It
 
 <iframe style="aspect-ratio: 16/9;" src="/posts/paperclip/paperclip-prototype/index.html#id=aulfuv&amp;p=subs&amp;sc=2&amp;c=1" onload="this.style.display='block'" width="100%" frameborder="0">
 </iframe>
+
+The following presentation video explains the full project logic, from research background and system framework to the prototype workflow.
+
+<video src="/posts/paperclip/img/paperclip_presentation.mp4" controls></video>
 
 ## 📚 Research: Why Literature Knowledge Is Hard to Manage
 

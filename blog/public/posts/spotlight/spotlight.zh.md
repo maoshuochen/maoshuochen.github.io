@@ -4,6 +4,8 @@
 
 **_"Spotlight 是一个基于未来智能路线规划公交服务的公共交通识别系统。该系统使用光、声音和 AR 帮助用户从众多相似车辆中识别他们预订的公交车。"_**
 
+<video src="/posts/spotlight/img/SPOT-LIGHT.mp4" controls></video>
+
 ## 🚌 背景：未来公交系统
 
 ### 🏙️ 城市化
@@ -38,19 +40,19 @@
 
 我们从未来上班族 John 的角度体验这个系统。当 John 需要出行时，只需在 APP 中预订车辆，先输入起点，系统将分配最近的合理停车点。再输入终点，确认后系统将分配一辆在线智能公交车，在预定时间到预定地点接 John，并提示 John 注意公交车的颜色。
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-1_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-1_x264.mp4" controls></video>
 
 ### 🔍 寻找公交车
 
 公交车会提前到达上车点等待 John，灯光缓慢呼吸表示停车。当 John 到达接车地点时，同一地点可能有多辆公交车。此时 John 可以举起手机，使用 APP 的 AR 功能辅助识别。此时手机界面变暗，当 John 预订的公交车出现在界面中时，AR 会高亮显示公交车以辅助 John 识别。
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-2_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-2_x264.mp4" controls></video>
 
 ### ✅ 确认
 
 当 John 找到预订的公交车时，AR 还会提示最快的上车路线。当 John 靠近公交车时，灯光呼吸频率加快以提醒 John。
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-3_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-3_x264.mp4" controls></video>
 
 ### 👆 上车
 
@@ -58,19 +60,19 @@
 
 ![](./img/boarding-confirmation-scene.webp)
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-4_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-4_x264.mp4" controls></video>
 
 ### ❗ 警告行人
 
 当路人阻挡行驶路线时，顶灯会闪烁红光，离路人越近，频闪越快。行驶声音（如海浪声）也会变得激烈以警告路人。
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-5_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-5_x264.mp4" controls></video>
 
 ### 👇 下车
 
 John 的目的地到了。当 John 下车时，门框周围也会亮起绿灯并响起正确的提示音。如果有人跟随 John 但在错误的地方下车，门框周围会亮起红灯，并响起错误提示音以防止她下错车。
 
-<video src="/posts/spotlight/img/SpotlightStoryboard-6_x264.mp4"></video>
+<video src="/posts/spotlight/img/SpotlightStoryboard-6_x264.mp4" controls></video>
 
 ## 💡 交互：识别问题的解决方案
 
