@@ -2,6 +2,8 @@
 
 Fluxor is a speculative mobility system for the Yangtze River Delta in 2040. The project asks how transportation can do more than move people efficiently: it can also redistribute services, activate under-served suburban areas, and bring new social, cultural, and creative opportunities to communities that are usually treated as the edge of the city.
 
+<video src="/posts/fluxor/FLUXOR.mp4" controls></video>
+
 ## Background: Suburban Life in Shanghai
 
 The familiar image of Shanghai is often the skyline of the city center. Yet most residents experience the city from a very different position: long commutes, repetitive residential blocks, limited neighborhood services, and fewer places for evening entertainment or social activity.
@@ -54,9 +56,15 @@ Four business and service modes were developed from the demand analysis: stores 
 
 [![](./img/Snipaste_2020-02-05_15-17-01-1536x864.jpg)](./img/Snipaste_2020-02-05_15-17-01-1536x864.jpg)
 
+The exhibition prototype translated the system into a physical installation: a large touch table showed the regional service network and trigger-demand logic, while miniature vehicle modules demonstrated how services could change according to community needs.
+
+<video src="/posts/fluxor/fluxor-exhibition-1.mp4" controls></video>
+
 ## Service Scenarios
 
 ![](./img/mobile-service-cabins.webp)
+
+<video src="/posts/fluxor/fluxor-exhibition-2.mp4" controls></video>
 
 ### Mobile Flash Store
 

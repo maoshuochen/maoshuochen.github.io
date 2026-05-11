@@ -2,6 +2,8 @@
 
 Fluxor 是一个面向 2040 年长三角地区的未来出行系统设想。项目提出，交通不应该只负责高效移动人群，也可以重新分配服务资源，激活服务不足的郊区社区，并把新的社交、文化和创造机会带到通常被视为城市边缘的区域。
 
+<video src="/posts/fluxor/FLUXOR.mp4" controls></video>
+
 ## 背景：上海的郊区生活
 
 人们提到上海，常常会想到市中心的天际线。但对更多居民来说，他们日常经验中的上海是漫长通勤、重复的住宅街区、有限的邻里服务，以及夜间娱乐和社交活动的缺乏。
@@ -54,9 +56,15 @@ Fluxor 是由智能云系统连接的一组移动服务车辆。每辆车携带�
 
 [![](./img/Snipaste_2020-02-05_15-17-01-1536x864.jpg)](./img/Snipaste_2020-02-05_15-17-01-1536x864.jpg)
 
+展览原型把系统转化成一个实体装置：大型触控桌展示区域服务网络和 Trigger-demand 逻辑，小型车辆模块则展示服务如何根据社区需求变化。
+
+<video src="/posts/fluxor/fluxor-exhibition-1.mp4" controls></video>
+
 ## 服务场景
 
 ![](./img/mobile-service-cabins.webp)
+
+<video src="/posts/fluxor/fluxor-exhibition-2.mp4" controls></video>
 
 ### 移动快闪店
 
