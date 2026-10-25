@@ -1,86 +1,87 @@
 # Fluxor – 2040 Shanghai Mobility System
 
-Fluxor is a future (2040) transportation system, aim at balancing regional development inequalities of the Yangtze River Delta and bring more energy by trigger demands.
+Fluxor is a speculative mobility system for the Yangtze River Delta in 2040. The project asks how transportation can do more than move people efficiently: it can also redistribute services, activate under-served suburban areas, and bring new social, cultural, and creative opportunities to communities that are usually treated as the edge of the city.
 
-Contents
+<video src="/posts/fluxor/FLUXOR.mp4" controls></video>
 
-- [1 🏙️ Chapter1 Suburban Life in 2019](about:blank#Chapter1SuburbanLifein2019)
-- [2 ✨ Chapter2 Demand](about:blank#nbspChapter2nbspDemand)
-- [3 🚌 Chapter3 Fluxor](about:blank#Chapter3Fluxor)
-  - [3.1 🏪 Mobile flash store](about:blank#Mobileflashstore)
-  - [3.2 💊 AI clinic](about:blank#AIclinic)
-  - [3.3 👾 Multiplayer VR gaming room](about:blank#MultiplayerVRgamingroom)
-  - [3.4 🔬 Co-creation laboratory](about:blank#Co-creationlaboratory)
+## Background: Suburban Life in Shanghai
 
-## 🏙️ Chapter1 Suburban Life in 2019
+The familiar image of Shanghai is often the skyline of the city center. Yet most residents experience the city from a very different position: long commutes, repetitive residential blocks, limited neighborhood services, and fewer places for evening entertainment or social activity.
 
-When we think of Shanghai, what is the picture that emerges in the brain? I believe everyone’s first impression is similar to this picture – prosperous skyscrapers. But for most Shanghai residents, it’s actually the picture below. It’s a more deserted suburban scene.
+Around 7 million people live in central Shanghai, while about 16 million live in suburban districts. When the lens expands to the whole Yangtze River Delta, the question becomes even larger: how can a metropolitan region with more than 150 million people offer richer everyday experiences outside the strongest urban cores?
 
-Let’s take a look at the comparison between the city center and the suburbs. There are about 7 million people in the center of Shanghai, while there are 16 million people in the suburb, which is about 2.4 times that of the residents of the city center. This is why we said earlier that more Shanghai residents saw such a picture of Shanghai. We put our perspective on a larger area, with a population of 150 million throughout the Yangtze River Delta. So we need to pay attention to the majority of the people who now live in the suburb, to see their lives.
+![](./img/image-1575701513586-768x432-1.webp)
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/05/image-1575701513586-768x432-1.webp)
+The daily pain points were then translated into four visual scenarios: tedious commuting, repetitive food choices, limited entertainment, and a lack of social activity. These images helped clarify that the problem was not only transportation time, but the thinness of everyday services around suburban life.
 
-Comparison of the population in the city center and suburb
+![](./img/image-1575701912297-768x432-1.webp)
 
-We can see that most of the buildings in the suburb are the same houses with many construction sites. People go to work downtown after a **long and tedious commuting** every day. When people got home, there were only a few **monotonous food** stores nearby. There is **no entertainment** place around at night. So they can only watch the play at home for entertainment. There are **no social clubs and no social activities** in the suburb.
+![](./img/image-1575701938840-768x432-1.webp)
 
-Also, living in the city, why are Suburbans’live so boring? What do Suburbans actually need?
+![](./img/image-1575701965689-768x432-1.webp)
 
-## ✨ Chapter2 Demand
+![](./img/image-1575701997677-768x432-1.webp)
 
-We analyze people’s demands and build a DEMAND TRIANGLE. From bottom to top, the first layer is the physiological demand such as food, water, sleep. The second layer is the safety demand such as medical treatment and employment, the third is to play games, watch movies, and other entertainment demand, the fourth is the social demand to interact with others, and the fifth is the highest level of self-actualization. In this demand triangle, We call demand at the bottom two levels as the basic demand. The top three layers are advanced demand.
+## Research: From Basic Demand to Advanced Demand
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/image-1575703621406-1024x576.png)](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/image-1575703621406-1024x576.png)
+The project began by mapping residents' needs into a demand triangle. Basic needs include food, safety, healthcare, and employment. Advanced needs include entertainment, social connection, learning, creation, and self-actualization.
 
-Demand Triangle
+Suburban areas usually satisfy the first layer of needs, but many advanced services remain concentrated in the city center. This imbalance produces a lifestyle gap: residents can live in the suburbs, but they still depend on the center for many meaningful experiences.
 
-After analyzing the demand of the individual, let’s go back to the point of view of the city, the urban function of the city center covers all the demand more or less, but the urban function of the suburbs only meets the basic demand of the residents, but can not satisfy the advanced demand. For more residents to live a better life, we need to transfer some of the functions of the center to the suburbs. We call this “ON-DEMAND” mode.
+[![](./img/image-1575703621406-1024x576.png)](./img/image-1575703621406-1024x576.png)
 
-From a personal point of view, ON-DEMAND mode is, the service will come to you and carried with what you want. However, we think that the future can not just stop at the ON-DEMAND mode, but have to attain a new mode, which we call, TRIGGER-DEMAND mode. This means that the services not only give users what they want but also something unexpected to stimulate new demand.
+## Strategy: From On-Demand to Trigger-Demand
 
-![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/2019-12-07-16-54-49_Trim.webp)
+An on-demand service answers a clear request: a user knows what they want, and the system delivers it. Fluxor extends this logic into a trigger-demand model. Instead of only responding to existing demand, the system brings unexpected services into a community and creates new reasons for people to gather, explore, learn, or collaborate.
 
-ON-DEMAND & TRIGGER-DEMAND
+![](./img/2019-12-07-16-54-49_Trim.webp)
 
-We can look at it on the Kano model. If you failed in ON-DEMAND, users will be very dissatisfied; however, even if you fulfilled ON-DEMAND, users may not be satisfied either. In contrast, if TRIGGER-DEMAND is implemented, which means users’ potential & unexpected demand is aroused, it is likely to produce the highest level of satisfaction.
+The Kano model helped frame this shift. Meeting expected needs prevents dissatisfaction, but it rarely creates surprise or attachment. Trigger-demand services can introduce moments that residents did not actively search for, yet may quickly recognize as valuable once they appear nearby.
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/image-1575708727310-1024x576.png)](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/image-1575708727310-1024x576.png)
+[![](./img/image-1575708727310-1024x576.png)](./img/image-1575708727310-1024x576.png)
 
-Kano Model
+## System Concept
 
-That’s why the system should go further from ON DEMAND to TRIGGER DEMAND. That is, the service can not only follow the demand of the users but with a certain degree of initiative, to actively move to the perspective of the users, trigger their demand, then activate the entire Yangtze River Delta. In this way, TRIGGER DEMAND will better at serving the citizens.  
-So, how do our services implement TRIGGER DEMAND?
+Fluxor is a fleet of mobile service vehicles connected by an intelligent cloud system. Each vehicle carries a different service module and can move between neighborhoods according to time, demand, population density, and local events.
 
-## 🚌 Chapter3 Fluxor
+Rather than building every advanced service permanently in every suburb, Fluxor lets services flow through the region. The system can combine mobility, data, and modular interiors to create a flexible urban service network.
 
-Next, we introduce the system we designed, FLUXOR. This is a vehicle of the future, which apparently has some space to move. It’s equipped with a variety of services, which can flow across communities. And a lot of FLUXORS are linked and combined through intelligent networking so that they adaptively change the ecosystem of the city. Driven by the Big Data Cloud, the vehicles with services are flexible in serving different parts of the city at different times, bringing vitality to a wider range of city areas, suburbs, and even to the whole Yangtze River Delta.
+Four business and service modes were developed from the demand analysis: stores and manufacturers, public institutions, virtual service providers, and creative producers.
 
-Back to the beginning of the DEMAND TRIANGLE. From this triangle, we analyze the 4 future forms of business modes, that is: **Store & Manufacturers / Public Institutions / Virtual Service Provider / Creative Producer** . Here are the system maps of these business modes. Corresponding to these 4 kinds of business modes, 4 service scenarios are built:
+[![](./img/Snipaste_2020-02-05_15-17-27-1024x576.png)](./img/Snipaste_2020-02-05_15-17-27-1024x576.png)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-27-1024x576.png)](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-27-1024x576.png)
+[![](./img/Snipaste_2020-02-05_15-17-21-1024x576.png)](./img/Snipaste_2020-02-05_15-17-21-1024x576.png)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-21-1024x576.png)](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-21-1024x576.png)
+[![](./img/Snipaste_2020-02-05_15-17-10-1536x864.jpg)](./img/Snipaste_2020-02-05_15-17-10-1536x864.jpg)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-10-1024x576.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-10-1024x576.jpg)
+[![](./img/Snipaste_2020-02-05_15-17-01-1536x864.jpg)](./img/Snipaste_2020-02-05_15-17-01-1536x864.jpg)
 
-[![](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-01-1024x576.jpg)](https://cdn.maoshuochen.top/wp-content/uploads/2020/08/Snipaste_2020-02-05_15-17-01-1024x576.jpg)
+The exhibition prototype translated the system into a physical installation: a large touch table showed the regional service network and trigger-demand logic, while miniature vehicle modules demonstrated how services could change according to community needs.
 
-### 🏪 Mobile flash store
+<video src="/posts/fluxor/fluxor-exhibition-1.mp4" controls></video>
 
-People are looking at newly coming goods, of different brands near their families. Here in the picture, there are clothes, perfume, and watches.
+## Service Scenarios
 
-### 💊 AI clinic
+![](./img/mobile-service-cabins.webp)
 
-The man is doing a medical examination. Since a fluxor comes near his home with an intelligent robot, he no longer has to go to the hospitals in the city center and waiting for the doctors.
+<video src="/posts/fluxor/fluxor-exhibition-2.mp4" controls></video>
 
-### 👾 Multiplayer VR gaming room
+### Mobile Flash Store
 
-The boys occasionally find this VR experience and start an adventure together, getting a lot of fun.
+A Fluxor vehicle can bring curated products from different brands directly into a residential area. Instead of a static neighborhood shop, the service becomes a rotating local event where people discover clothing, accessories, perfume, or lifestyle goods near home.
 
-### 🔬 Co-creation laboratory
+### AI Clinic
 
-People with good ideas and professional abilities can get together and make something cooperatively, get a sense of self-actualization.
+A medical Fluxor can provide routine health checks with intelligent diagnostic equipment. Residents no longer need to travel to a central hospital for every minor examination, reducing both travel time and pressure on city-center medical resources.
 
-Posted in <a href="https://maoshuochen.top/category/college-of-design-and-innovation-in-tongji-univeristy/" rel="category tag">College of Design and Innovation in Tongji Univeristy</a>
+### Multiplayer VR Gaming Room
 
-本文转自 [https://maoshuochen.top/fluxor-2040-shanghai-mobility-system/](https://maoshuochen.top/fluxor-2040-shanghai-mobility-system/)，如有侵权，请联系删除。
+Entertainment services can also become mobile. A VR gaming Fluxor creates a shared experience for young residents who may otherwise lack nearby leisure venues. The vehicle is not only a product delivery unit, but also a temporary social space.
+
+### Co-Creation Laboratory
+
+For people with ideas, tools, and professional skills, Fluxor can become a small co-creation lab. It gathers makers, designers, and local residents around collaborative production, giving suburban communities access to spaces for experimentation and self-actualization.
+
+## Summary
+
+Fluxor treats mobility as a way to reorganize urban opportunity. By moving advanced services through suburban communities, the system imagines a more distributed city where vitality is not locked inside the center, and where transportation becomes part of a larger social infrastructure.

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2020-05-29">
+    <creator>Gephi 0.9</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
+    </attributes>
+    <nodes>
+      <node id="11" label="Knowledge Graph">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="36.0"></viz:size>
+        <viz:position x="25.285501" y="18.773178"></viz:position>
+      </node>
+      <node id="23" label="CHI'19">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="16.000002"></viz:size>
+        <viz:position x="-42.881966" y="257.8138"></viz:position>
+      </node>
+      <node id="0" label="AI">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="25.485716"></viz:size>
+        <viz:position x="222.47646" y="-84.4829"></viz:position>
+      </node>
+      <node id="16" label="CHI'20">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="13.142858"></viz:size>
+        <viz:position x="15.652267" y="445.83337"></viz:position>
+      </node>
+      <node id="29" label="Microsoft Research">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="16.4"></viz:size>
+        <viz:position x="-289.69537" y="107.25107"></viz:position>
+      </node>
+      <node id="17" label="SIGMOD'19">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="6.4571447"></viz:size>
+        <viz:position x="-296.72546" y="284.021"></viz:position>
+      </node>
+      <node id="18" label="SIGRAGPH'19">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="12.857145"></viz:size>
+        <viz:position x="-64.690956" y="562.7198"></viz:position>
+      </node>
+      <node id="19" label="ICSE'18">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.057145"></viz:size>
+        <viz:position x="-190.50424" y="470.21597"></viz:position>
+      </node>
+      <node id="20" label="Cheng Soon Ong">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="16.057146"></viz:size>
+        <viz:position x="88.56103" y="112.827965"></viz:position>
+      </node>
+      <node id="21" label="Junyang Gao">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="20.457146"></viz:size>
+        <viz:position x="-207.85823" y="368.18378"></viz:position>
+      </node>
+      <node id="22" label="Association Rules">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="7.6571455"></viz:size>
+        <viz:position x="-115.78255" y="145.09367"></viz:position>
+      </node>
+      <node id="34" label="Stanford University">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="11.714287"></viz:size>
+        <viz:position x="-168.73502" y="-248.90343"></viz:position>
+      </node>
+      <node id="35" label="Tongji University">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="5.714287"></viz:size>
+        <viz:position x="2.1350431" y="-170.82233"></viz:position>
+      </node>
+      <node id="36" label="Carnegie Mellon University">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="5.714287"></viz:size>
+        <viz:position x="-324.72327" y="-166.72218"></viz:position>
+      </node>
+      <node id="37" label="Berkeley">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.514286"></viz:size>
+        <viz:position x="-337.58423" y="-46.801666"></viz:position>
+      </node>
+      <node id="38" label="Cornell University">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="11.314287"></viz:size>
+        <viz:position x="-206.44116" y="15.1084175"></viz:position>
+      </node>
+      <node id="31" label="Simplice">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="12.228573"></viz:size>
+        <viz:position x="307.2226" y="254.42984"></viz:position>
+      </node>
+      <node id="2" label="Graph Neighborhood">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.285714"></viz:size>
+        <viz:position x="413.55423" y="95.72851"></viz:position>
+      </node>
+      <node id="3" label="Q&amp;A System">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="9.485714"></viz:size>
+        <viz:position x="379.1736" y="-17.003536"></viz:position>
+      </node>
+      <node id="72" label="Library">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="11.085714"></viz:size>
+        <viz:position x="231.22565" y="-185.38773"></viz:position>
+      </node>
+      <node id="12" label="Omar Alonso">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.742859"></viz:size>
+        <viz:position x="180.51405" y="285.2679"></viz:position>
+      </node>
+      <node id="30" label="Perpetue">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="6.742859"></viz:size>
+        <viz:position x="282.68634" y="437.8681"></viz:position>
+      </node>
+      <node id="33" label="Minjun Zhao">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="6.742859"></viz:size>
+        <viz:position x="-95.68031" y="80.56167"></viz:position>
+      </node>
+      <node id="1" label="NLP">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="8.8"></viz:size>
+        <viz:position x="246.19025" y="3.3667996"></viz:position>
+      </node>
+      <node id="4" label="Image Analysis">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="6.8"></viz:size>
+        <viz:position x="364.1842" y="-195.93118"></viz:position>
+      </node>
+      <node id="5" label="Database">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="15.6"></viz:size>
+        <viz:position x="120.66908" y="-107.87699"></viz:position>
+      </node>
+      <node id="6" label="Cited Index">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="32.552948" y="-304.82263"></viz:position>
+      </node>
+      <node id="7" label="Co-word Visualisation">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="300.48016" y="-324.94122"></viz:position>
+      </node>
+      <node id="8" label="Graph">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="11.599999"></viz:size>
+        <viz:position x="25.761553" y="-78.75508"></viz:position>
+      </node>
+      <node id="9" label="Data Mining">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="11.2"></viz:size>
+        <viz:position x="269.40308" y="113.03127"></viz:position>
+      </node>
+      <node id="10" label="Chih-Jen Lin">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-88.77327" y="-105.836845"></viz:position>
+      </node>
+      <node id="13" label="Robert C.Bolles">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="12.400001"></viz:size>
+        <viz:position x="148.16887" y="-280.90918"></viz:position>
+      </node>
+      <node id="14" label="Martin A. Fischler">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.8"></viz:size>
+        <viz:position x="157.79716" y="-18.297321"></viz:position>
+      </node>
+      <node id="15" label="Bing Xu">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="11.470447" y="174.63802"></viz:position>
+      </node>
+      <node id="32" label="Xueqi Cheng">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="94.07696" y="231.26218"></viz:position>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="1" target="0"></edge>
+      <edge id="1" source="2" target="0"></edge>
+      <edge id="2" source="3" target="0"></edge>
+      <edge id="3" source="3" target="2"></edge>
+      <edge id="4" source="4" target="0"></edge>
+      <edge id="5" source="5" target="0"></edge>
+      <edge id="6" source="6" target="0"></edge>
+      <edge id="7" source="7" target="0"></edge>
+      <edge id="8" source="8" target="0"></edge>
+      <edge id="9" source="9" target="0"></edge>
+      <edge id="13" source="11" target="0"></edge>
+      <edge id="11" source="11" target="3"></edge>
+      <edge id="10" source="11" target="10"></edge>
+      <edge id="14" source="12" target="11"></edge>
+      <edge id="15" source="13" target="11"></edge>
+      <edge id="16" source="14" target="11"></edge>
+      <edge id="17" source="15" target="11"></edge>
+      <edge id="19" source="18" target="16"></edge>
+      <edge id="21" source="19" target="16"></edge>
+      <edge id="289" source="31" target="20"></edge>
+      <edge id="290" source="12" target="31"></edge>
+      <edge id="28" source="21" target="16"></edge>
+      <edge id="31" source="21" target="19"></edge>
+      <edge id="34" source="22" target="17"></edge>
+      <edge id="37" source="22" target="20"></edge>
+      <edge id="47" source="23" target="11"></edge>
+      <edge id="46" source="23" target="12"></edge>
+      <edge id="39" source="23" target="16"></edge>
+      <edge id="40" source="23" target="17"></edge>
+      <edge id="41" source="23" target="18"></edge>
+      <edge id="42" source="23" target="19"></edge>
+      <edge id="43" source="23" target="20"></edge>
+      <edge id="44" source="23" target="21"></edge>
+      <edge id="45" source="23" target="22"></edge>
+      <edge id="66" source="29" target="11"></edge>
+      <edge id="64" source="29" target="23"></edge>
+      <edge id="67" source="30" target="23"></edge>
+      <edge id="68" source="31" target="30"></edge>
+      <edge id="72" source="32" target="11"></edge>
+      <edge id="75" source="34" target="11"></edge>
+      <edge id="77" source="35" target="11"></edge>
+      <edge id="78" source="35" target="34"></edge>
+      <edge id="82" source="36" target="11"></edge>
+      <edge id="80" source="36" target="34"></edge>
+      <edge id="87" source="37" target="11"></edge>
+      <edge id="88" source="37" target="29"></edge>
+      <edge id="84" source="37" target="34"></edge>
+      <edge id="86" source="37" target="36"></edge>
+      <edge id="93" source="38" target="11"></edge>
+      <edge id="94" source="38" target="29"></edge>
+      <edge id="89" source="38" target="34"></edge>
+      <edge id="236" source="72" target="11"></edge>
+      <edge id="254" source="14" target="23"></edge>
+      <edge id="255" source="32" target="16"></edge>
+      <edge id="257" source="15" target="23"></edge>
+      <edge id="258" source="10" target="23"></edge>
+      <edge id="259" source="14" target="13"></edge>
+      <edge id="260" source="15" target="32"></edge>
+      <edge id="261" source="35" target="14"></edge>
+      <edge id="262" source="34" target="13"></edge>
+      <edge id="263" source="29" target="15"></edge>
+      <edge id="264" source="36" target="10"></edge>
+      <edge id="265" source="38" target="32"></edge>
+      <edge id="266" source="29" target="33"></edge>
+      <edge id="268" source="6" target="10"></edge>
+      <edge id="269" source="9" target="15"></edge>
+      <edge id="270" source="4" target="13"></edge>
+      <edge id="271" source="7" target="72"></edge>
+      <edge id="272" source="11" target="1"></edge>
+      <edge id="273" source="5" target="11"></edge>
+      <edge id="274" source="5" target="8"></edge>
+      <edge id="275" source="8" target="11"></edge>
+      <edge id="276" source="22" target="11"></edge>
+      <edge id="277" source="8" target="22"></edge>
+      <edge id="278" source="1" target="9"></edge>
+      <edge id="279" source="4" target="1"></edge>
+      <edge id="280" source="20" target="32"></edge>
+      <edge id="281" source="20" target="36"></edge>
+      <edge id="282" source="20" target="5"></edge>
+      <edge id="283" source="13" target="7"></edge>
+      <edge id="284" source="14" target="72"></edge>
+      <edge id="286" source="32" target="2"></edge>
+      <edge id="287" source="21" target="11"></edge>
+      <edge id="288" source="20" target="11"></edge>
+      <edge id="291" source="0" target="20"></edge>
+      <edge id="292" source="12" target="9"></edge>
+      <edge id="293" source="14" target="31"></edge>
+      <edge id="294" source="9" target="14"></edge>
+      <edge id="295" source="9" target="31"></edge>
+      <edge id="296" source="1" target="15"></edge>
+      <edge id="297" source="33" target="20"></edge>
+      <edge id="298" source="33" target="8"></edge>
+    </edges>
+  </graph>
+</gexf>
