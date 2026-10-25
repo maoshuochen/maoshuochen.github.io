@@ -1,7 +1,6 @@
 # Blog
 
 URL:
-https://maoshuochen.com
 https://maoshuochen.github.io
 
 Stack:

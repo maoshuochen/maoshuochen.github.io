@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const SITE_URL = "https://maoshuochen.com";
+const SITE_URL = "https://maoshuochen.github.io";
 const SITE_NAME = "Maoshuo Chen";
 const DEFAULT_IMAGE = "/logo/star.svg";
 
