@@ -12,12 +12,10 @@ export const translations = {
     homeIntro2: '我是一名产品设计师',
     
     // About
-    aboutTitle: 'About Me',
+    aboutTitle: '关于我',
     name: '陈茂烁 - 产品经理',
     education: '硕士',
-    age: '27 岁',
     email: '邮箱',
-    phone: '电话',
     
     selfIntroTitle: '自我介绍',
     selfIntroText: '你好，我叫陈茂烁，是一名用户型产品经理，专注于提升产品体验与解决用户问题。',
@@ -102,9 +100,7 @@ export const translations = {
     aboutTitle: 'About Me',
     name: 'Maoshuo Chen - Product Manager',
     education: 'Master\'s Degree',
-    age: '27 years old',
     email: 'Email',
-    phone: 'Phone',
     
     selfIntroTitle: 'About Me',
     selfIntroText: 'Hello, I\'m Maoshuo Chen, a user-focused product manager dedicated to enhancing product experience and solving user problems.',

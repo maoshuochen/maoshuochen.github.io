@@ -25,9 +25,13 @@ export default function About() {
           </h1>
           <p className="font-medium text-lg">{t('name')}</p>
           <div className="text-zinc-600 dark:text-zinc-400">
-            <p>{t('education')} | {t('age')}</p>
-            <p>📧 maoshuochen@qq.com</p>
-            <p>📱 18916265983</p>
+            <p>{t('education')}</p>
+            <p>
+              📧{' '}
+              <a className="underline underline-offset-2" href="mailto:maoshuochen@qq.com">
+                maoshuochen@qq.com
+              </a>
+            </p>
           </div>
         </div>
 
